@@ -1,11 +1,9 @@
 # Nightreign relic optimizer
 
-This is a vibe-coded project I whipped up in 1 hour with Claude Opus 5.5.
+This is a vibe-coded app for optimizing your Nightreign build.
 
 Author: Tijmen de Haan
 Date: 2026-10-27
-
-Feedback welcome.
 
 ----
 
