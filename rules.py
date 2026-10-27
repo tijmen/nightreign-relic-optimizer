@@ -23,6 +23,14 @@ ALIASES = {
     7006001: 7006000,                  # Improved Stance-Breaking when Two-Handing
     7006101: 7006100,                  # Improved Stance-Breaking when Wielding Two Armaments
     10000: 7036000,                    # FP Restoration upon Successive Attacks
+    # unique character relics carry their own copy of a generic effect ID
+    10002: 7035900,                    # Fell Omen Fetish: Switching Weapons Boosts Attack Power
+    11000: 7033200,                    # The Wylder's Earring: [Wylder] +1 additional Character Skill use
+    11002: 7032400,                    # Silver Tear: [Wylder] Art gauge greatly filled when ability is activated
+    12002: 7012000, 12003: 7012000,    # Witch's Brooch: [Guardian] Slowly restores nearby allies' HP while Art is active
+    16002: 7010900,                    # Old Portrait: [Revenant] Expend own HP to fully heal nearby allies
+    17002: 7032900,                    # Bone-Like Stone: [Recluse] Suffer blood loss and increase attack power
+    19001: 7036300,                    # Note "My Dear Successor": [Scholar] Allies targeted by Character Skill gain boosted attack
 }
 
 RALLY_BASE = 7005600
