@@ -149,6 +149,34 @@ def find(rows, name, deep_first):
     return None
 
 
+NUM_LIST = r"[+-]?\d+(?:\.\d+)?[x%]?(?:\s*/\s*[+-]?\d+(?:\.\d+)?[x%]?)+"
+
+
+def tiered(ref, name):
+    """Narrow a multi-tier sheet row ("Vigor +1/2/3", "+20 / +40 / +60 Max HP") to the tier in the export name."""
+    m = re.search(r"\+(\d+(?:/\d+)+)", ref["desc"])
+    if not m:
+        return ref
+    tiers = m.group(1).split("/")
+    t = re.search(r"\+(\d+)$", name.strip())
+    t = t.group(1) if t else "0"   # no suffix = +0, e.g. "Physical Attack Up"
+    if t not in tiers:
+        return ref
+    k = tiers.index(t)
+
+    def one(v):   # only numeric lists with one entry per tier; "magic/fire/lightning/holy" etc. are left alone
+        parts = re.split(r"\s*/\s*", v.group(0))
+        if len(parts) != len(tiers):
+            return v.group(0)
+        unit = re.search(r"[x%]?$", parts[-1]).group(0)   # "6/10.5/12%": the unit is only on the last value
+        return parts[k] if parts[k][-1] in "x%" else parts[k] + unit
+
+    def pick(s):
+        return re.sub(NUM_LIST, one, s)
+    return dict(ref, desc=ref["desc"][:m.start()] + "+" + t + ref["desc"][m.end():],
+                effect=pick(ref["effect"]), notes=pick(ref["notes"]))
+
+
 DEFAULT_REF = Path(__file__).with_name("reference") / "useful_info.xlsx"
 
 
@@ -167,7 +195,7 @@ def build(export, ref_path=DEFAULT_REF):
         for i, n in sorted(table.items()):
             ref = find(rows, n, deep_first=kind == "curses" or str(i).startswith("6")) or prev[kind].get(str(i))
             if ref:
-                out[kind][str(i)] = ref
+                out[kind][str(i)] = tiered(ref, n)
             else:
                 missing.append(f"{kind[:-1]} {i}: {n}")
     ro.REF_PATH.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
