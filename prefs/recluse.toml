@@ -1,0 +1,520 @@
+# Recluse relic preferences.  Edit this file (or use relic_ui.py), then:
+#     uv run relic_opt.py all_relics_exported_YYYYMMDD.xlsx --character Recluse
+# Weights are "points"; only their relative size matters.
+# Starting defaults (2026-10-27): Raider's generic weights, adjusted for Recluse - caster: Int/Faith sorceries and incantations with a staff, affinity residues, Soulblood Song art; low HP.
+# Character effects, weapon classes, stats and spells were set for this profile; tune to taste.
+
+character = "Recluse"         # effects tagged for other characters score 0
+curse_count_penalty = -1      # extra points per curse of any kind (you want few curses)
+unknown_curse_weight = -5     # curses not listed in [curses] (until you run --sync and set them)
+top = 10                      # builds to print overall
+per_vessel = 1                # also print the best N builds for each vessel
+
+# ----------------------------------------------------------------------------
+# Vessels.  Colors: R G B Y, W = any color.  `normal` = slots 1-3, `deep` = slots 4-6.
+# Comment one out (#) to exclude it from the search.
+# ----------------------------------------------------------------------------
+vessels = [
+  { name = "Recluse's Urn",              normal = "BBG", deep = "BBG" },
+  { name = "Recluse's Goblet",           normal = "RBY", deep = "RBY" },
+  { name = "Recluse's Chalice",          normal = "YGW", deep = "BGG" },
+  { name = "Sealed Recluse's Urn",       normal = "GBB", deep = "YYR" },
+  { name = "Soot-Covered Recluse's Urn", normal = "RRY", deep = "RRY" },
+  { name = "Giant's Cradle Grail",       normal = "BBB", deep = "BBB" },
+  { name = "Sacred Erdtree Grail",       normal = "YYY", deep = "YYY" },
+  { name = "Spirit Shelter Grail",       normal = "GGG", deep = "GGG" },
+  { name = "Decrepit Goblet",            normal = "RRB", deep = "RRB" },
+  { name = "Forgotten Goblet",           normal = "YBR", deep = "BGW" },
+  { name = "Sacdutree Grail",            normal = "RRR", deep = "RRR" },
+]
+
+# ----------------------------------------------------------------------------
+# Damage model: how damage effects are valued (see rules.py). 1 point = `points_per_pct_damage` per 1% damage.
+# Physical Attack Up tiers, Improved Melee Attack Power, Strength +n and Strength curses are computed from this
+# (Strength from the game's stat-scaling data for `weapon`), so their lines aren't in the tables below.
+# level_weights: how much each character level counts (e.g. boss fights at ~9, ~13 and 15).
+# two_handed: share of damage dealt two-handing (0 = always one-handed, 1 = always two-handed).
+# ----------------------------------------------------------------------------
+[damage_model]
+points_per_pct_damage = 0.3
+weapon = "Recluse's Staff"
+two_handed = 0
+level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1, 10 = 1, 11 = 1, 12 = 1, 13 = 1, 14 = 1, 15 = 1 }
+
+# ============================================================================
+# EFFECT WEIGHTS  (key = effect ID, value = points; negative = bad)
+# [stacking]: every copy counts.   [once]: counts once no matter how many copies.
+# Move a line between the two tables to change how it stacks.
+# Effects for other characters ([Wylder], [Guardian], ...) are inert and auto-scored 0;
+# list one here only to override that.
+# Unlisted IDs score 0 and are reported; `--sync` appends them here.
+# Game rules (alias IDs, rally tiers, effects that don't stack with each other, derived damage values)
+# live in rules.py; the editor shows them on each row.
+# ============================================================================
+
+[stacking]
+# --- Starting items & armament skill changes
+7126000 = 1     # Starlight Shards in possession at start of expedition
+7122600 = 0     # Shield Grease in possession at start of expedition
+7122500 = 0.5   # Holy Grease in possession at start of expedition
+7122400 = 0.5   # Lightning Grease in possession at start of expedition
+7122300 = 0.5   # Magic Grease in possession at start of expedition
+7122200 = 0.5   # Fire Grease in possession at start of expedition
+7122100 = 1     # Wraith Calling Bell in possession at start of expedition
+7122000 = 0     # Bewitching Branches in possession at start of expedition
+7121900 = 0.5   # Gravity Stone Chunks in possession at start of expedition
+7121800 = 0.5   # Glintstone Scraps in possession at start of expedition
+7121700 = 0     # Throwing Daggers in possession at start of expedition
+7121600 = 0     # Crystal Darts in possession at start of expedition
+7121500 = 0     # Poisonbone Darts in possession at start of expedition
+7121400 = 1     # Holy Water Pots in possession at start of expedition
+7121300 = 1     # Lightning Pots in possession at start of expedition
+7121200 = 1     # Magic Pots in possession at start of expedition
+7121100 = 1     # Fire Pots in possession at start of expedition
+7121000 = 2     # Small Pouch in possession at start of expedition
+6624500 = 1     # Acid Spraymist in possession at start of expedition
+6624400 = 1     # Poison Spraymist in possession at start of expedition
+6624300 = 1     # Bloodboil Aromatic in possession at start of expedition
+6624200 = 0.5   # Ironjar Aromatic in possession at start of expedition
+6624100 = 1     # Spark Aromatic in possession at start of expedition
+6624000 = 2     # Uplifting Aromatic in possession at start of expedition
+6623100 = 1     # Holy-Shrouding Cracked Tear in possession at start of expedition
+6623000 = 1     # Lightning-Shrouding Cracked Tear in possession at start of expedition
+6622900 = 1     # Magic-Shrouding Cracked Tear in possession at start of expedition
+6622800 = 1     # Flame-Shrouding Cracked Tear in possession at start of expedition
+6622700 = 1     # Stonebarb Cracked Tear in possession at start of expedition
+6622500 = 1     # Crimsonwhorl Bubbletear in possession at start of expedition
+6622300 = 1     # Leaden Hardtear in possession at start of expedition
+6622200 = 1     # Ruptured Crystal Tear in possession at start of expedition
+6622100 = 1     # Windy Crystal Tear in possession at start of expedition
+6622000 = 1     # Spiked Cracked Tear in possession at start of expedition
+6621900 = 1     # Thorny Cracked Tear in possession at start of expedition
+6621800 = 1     # Opaline Hardtear in possession at start of expedition
+6621700 = 1     # Greenburst Crystal Tear in possession at start of expedition
+6621600 = 1     # Crimsonburst Crystal Tear in possession at start of expedition
+6621500 = 1     # Opaline Bubbletear in possession at start of expedition
+6621400 = 1     # Crimson Bubbletear in possession at start of expedition
+6621300 = 1     # Speckled Hardtear in possession at start of expedition
+6621200 = 1     # Cerulean Crystal Tear in possession at start of expedition
+6621100 = 1     # Crimson Crystal Tear in possession at start of expedition
+6621000 = 1     # Crimsonspill Crystal Tear in possession at start of expedition
+# --- Weapon-class specific
+7332400 = 0     # Improved Bow Attack Power
+7332300 = 0     # Improved Colossal Weapon Attack Power
+7332200 = 0     # Improved Whip Attack Power
+7332100 = 0     # Improved Claw Attack Power
+7332000 = 0     # Improved Fist Attack Power
+7331900 = 0     # Improved Reaper Attack Power
+7331800 = 0     # Improved Halberd Attack Power
+7331700 = 0     # Improved Great Spear Attack Power
+7331500 = 0     # Improved Spear Attack Power
+7331400 = 0     # Improved Flail Attack Power
+7331300 = 0     # Improved Great Hammer Attack Power
+7331200 = 0     # Improved Hammer Attack Power
+7331000 = 0     # Improved Axe Attack Power
+7330900 = 0     # Improved Heavy Thrusting Sword Attack Power
+7330800 = 0     # Improved Thrusting Sword Attack Power
+7330700 = 0     # Improved Twinblade Attack Power
+7330600 = 0     # Improved Katana Attack Power
+7330500 = 0     # Improved Curved Greatsword Attack Power
+7330400 = 0     # Improved Curved Sword Attack Power
+7330300 = 0     # Improved Colossal Sword Attack Power
+7330200 = 0     # Improved Greatsword Attack Power
+7330100 = 0     # Improved Straight Sword Attack Power
+7330000 = 0     # Improved Dagger Attack Power
+7043000 = 0     # Improved Roar & Breath Attacks
+7036000 = 2     # FP Restoration upon Successive Attacks
+# --- Team support
+7110000 = 5     # Increased rune acquisition for self and allies
+# --- Healing & recovery
+7006500 = 4     # Continuous FP Recovery
+7001100 = 6     # Continuous HP Recovery
+6611400 = 4     # Improved Flask HP Restoration
+# --- Max HP / FP / stamina
+6610600 = 2     # Increased Maximum Stamina
+6610500 = 3     # Increased Maximum FP
+6610400 = 4     # Increased Maximum HP
+# --- Stats & poise
+7000702 = 0     # Arcane +3
+7000701 = 0     # Arcane +2
+7000700 = 0     # Arcane +1
+7000602 = 3     # Faith +3
+7000601 = 2     # Faith +2
+7000600 = 1     # Faith +1
+7000502 = 4.5   # Intelligence +3
+7000501 = 3     # Intelligence +2
+7000500 = 1.5   # Intelligence +1
+7000402 = 0     # Dexterity +3
+7000401 = 0     # Dexterity +2
+7000400 = 0     # Dexterity +1
+7000102 = 1.5   # Mind +3
+7000101 = 1     # Mind +2
+7000100 = 0.5   # Mind +1
+7000000 = 1     # Vigor +1
+7000001 = 2     # Vigor +2
+7000002 = 3     # Vigor +3
+7000200 = 0.3   # Endurance +1
+7000201 = 0.6   # Endurance +2
+7000202 = 0.9   # Endurance +3
+7001000 = 1     # Poise +1
+7001001 = 2     # Poise +2
+7001002 = 3     # Poise +3
+# --- Attack power
+7035800 = 1     # Boosts Attack Power of Added Affinity Attacks
+7006700 = 2     # Improved Skill Attack Power
+7001802 = 2     # Holy Attack Power Up +2
+7001801 = 1     # Holy Attack Power Up +1
+7001800 = 1     # Holy Attack Power Up
+7001702 = 2     # Lightning Attack Power Up +2
+7001701 = 1     # Lightning Attack Power Up +1
+7001700 = 1     # Lightning Attack Power Up
+7001602 = 2     # Fire Attack Power Up +2
+7001601 = 1     # Fire Attack Power Up +1
+7001600 = 1     # Fire Attack Power Up
+7001502 = 2     # Magic Attack Power Up +2
+7001501 = 1     # Magic Attack Power Up +1
+7001500 = 1     # Magic Attack Power Up
+6610802 = 6     # Improved Affinity Attack Power +2
+6610801 = 5     # Improved Affinity Attack Power +1
+6610800 = 4     # Improved Affinity Attack Power
+6001801 = 7     # Holy Attack Power Up +4
+6001800 = 5     # Holy Attack Power Up +3
+6001701 = 6     # Lightning Attack Power Up +4
+6001700 = 5     # Lightning Attack Power Up +3
+6001601 = 7     # Fire Attack Power Up +4
+6001600 = 6     # Fire Attack Power Up +3
+6001501 = 6     # Magic Attack Power Up +4
+6001500 = 5     # Magic Attack Power Up +3
+# --- Damage negation & resistances
+7003600 = 0.5   # Improved Madness Resistance
+7003500 = 0.8   # Improved Frost Resistance
+7003400 = 0.8   # Improved Rot Resistance
+7003300 = 0.3   # Improved Death Blight Resistance
+7003200 = 0.3   # Improved Sleep Resistance
+7003100 = 0.3   # Improved Blood Loss Resistance
+7003000 = 0.3   # Improved Poison Resistance
+7002900 = 1     # Holy Damage Negation Up
+7002800 = 1     # Lightning Damage Negation Up
+7002700 = 1     # Fire Damage Negation Up
+7002600 = 1     # Magic Damage Negation Up
+6611102 = 3.5   # Improved Affinity Damage Negation +2
+6611101 = 3     # Improved Affinity Damage Negation +1
+6611100 = 2     # Improved Affinity Damage Negation
+6003600 = 0.4   # Improved Madness Resistance +1
+6003500 = 0.4   # Improved Frost Resistance +1
+6003400 = 0.4   # Improved Rot Resistance +1
+6003300 = 0.4   # Improved Death Blight Resistance +1
+6003200 = 0.4   # Improved Sleep Resistance +1
+6003100 = 0.4   # Improved Blood Loss Resistance +1
+6003000 = 0.4   # Improved Poison Resistance +1
+6002901 = 2     # Improved Holy Damage Negation +2
+6002900 = 1.5   # Improved Holy Damage Negation +1
+6002801 = 2     # Improved Lightning Damage Negation +2
+6002800 = 1.5   # Improved Lightning Damage Negation +1
+6002701 = 2     # Improved Fire Damage Negation +2
+6002700 = 1.5   # Improved Fire Damage Negation +1
+6002601 = 2     # Improved Magic Damage Negation +2
+6002600 = 1.5   # Improved Magic Damage Negation +1
+6611001 = 5     # Improved Physical Damage Negation +1
+6611002 = 6     # Improved Physical Damage Negation +2
+7012300 = 3     # Improved Damage Negation at Low HP
+# --- Skill / Art gauge
+7043100 = 0     # Improved Perfuming Arts
+6043100 = 0     # Improved Perfuming Arts +1
+7000800 = 2.2   # Character Skill Cooldown Reduction +1
+7000801 = 2.5   # Character Skill Cooldown Reduction +2
+7000802 = 2.9   # Character Skill Cooldown Reduction +3
+7000900 = 2     # Ultimate Art Auto Charge +1
+7000901 = 2.5   # Ultimate Art Auto Charge +2
+7000902 = 3     # Ultimate Art Auto Charge +3
+# --- Other
+7044600 = 0     # Improved Dragon Communion Incantations
+7044500 = 0     # Improved Frenzied Flame Incantations
+7044400 = 0     # Improved Bestial Incantations
+7044300 = 0.5   # Improved Godslayer Incantations
+7044200 = 0.5   # Improved Giants' Flame Incantations
+7044100 = 0.5   # Improved Dragon Cult Incantations
+7044000 = 0.5   # Improved Fundamentalist Incantations
+7043800 = 1     # Improved Thorn Sorcery
+7043700 = 1     # Improved Gravity Sorcery
+7043600 = 1     # Improved Crystalian sorcery
+7043500 = 0     # Improved Invisibility Sorcery
+7043400 = 2     # Improved Glintblade Sorcery
+7043300 = 1.5   # Improved Carian Sword Sorcery
+7043200 = 0.5   # Improved Stonedigger Sorcery
+7040500 = 0.5   # Improved Glintstone and Gravity Stone Damage
+7040400 = 0     # Improved Throwing Knife Damage
+7040300 = 0     # Improved Throwing Pot Damage
+7040200 = 1     # Improved Critical Hits
+7040000 = 0.5   # Improved Initial Standard Attack
+7006100 = 0     # Improved Stance-Breaking when Wielding Two Armaments
+7006000 = 0     # Improved Stance-Breaking when Two-Handing
+6611302 = 5     # Improved Incantations +2
+6611301 = 4     # Improved Incantations +1
+6611300 = 3     # Improved Incantations
+6611202 = 7     # Improved Sorceries +2
+6611201 = 6     # Improved Sorceries +1
+6611200 = 5     # Improved Sorceries
+6610700 = 3     # Reduced FP Consumption
+6040300 = 0     # Improved Throwing Pot Damage +1
+6040100 = 0     # Improved Guard Counters +1
+6040101 = 0     # Improved Guard Counters +2
+7040100 = 0     # Improved Guard Counters
+
+[once]
+# --- Recluse
+6500600 = 3     # [Recluse] Collect Affinity Residues to Negate Affinity
+6646000 = -8    # [Recluse] Improved Vigor, Endurance, and Dexterity, Reduced Intelligence and Faith
+6646100 = 6     # [Recluse] Improved Intelligence and Faith, Reduced Mind
+7032800 = 4     # [Recluse] Collecting affinity residue activates Terra Magica
+7032900 = 4     # [Recluse] Suffer blood loss and increase attack power upon Art activation
+7034100 = 3     # [Recluse] Activating Ultimate Art raises Max HP
+# --- Stats & poise
+# --- Max HP / FP / stamina
+6060300 = 2     # Max HP increased for each great enemy defeated at a Great Church.
+6060600 = 1     # Max stamina increased for each great enemy defeated at a Great Encampment
+7000090 = 6     # Increased Maximum HP
+7000190 = 3     # Increased Maximum FP
+7000290 = 1.5   # Increased Maximum Stamina
+# --- Attack power
+7032200 = 2     # Taking attacks improves attack power
+6030900 = 0.6   # Physical attack power increases after using grease items +1
+6030901 = 0.8   # Physical attack power increases after using grease items +2
+6260000 = 0.5   # Attack power up when facing poison-afflicted enemy +1
+6260001 = 1     # Attack power up when facing poison-afflicted enemy +2
+6260300 = 0.5   # Attack power up when facing scarlet rot-afflicted enemy +1
+6260301 = 1     # Attack power up when facing scarlet rot-afflicted enemy +2
+6260400 = 0.5   # Attack power up when facing frostbite-afflicted enemy +1
+6260401 = 0.5   # Attack power up when facing frostbite-afflicted enemy +2
+6600000 = 0.5   # Sleep in Vicinity Improves Attack Power
+6600001 = 0.5   # Sleep in Vicinity Improves Attack Power +1
+6600100 = 0.5   # Madness in Vicinity Improves Attack Power
+6600101 = 0.5   # Madness in Vicinity Improves Attack Power +1
+7030900 = 0.5   # Physical attack power increases after using grease items
+7035900 = 0.5   # Switching Weapons Boosts Attack Power
+7037700 = 0     # Status Ailment Gauges Slowly Increase Attack Power
+7060000 = 3     # Attack power increased for each evergaol prisoner defeated
+7060200 = 7.5   # Attack power increased for each Night Invader defeated
+7260000 = 0.5   # Attack power up when facing poison-afflicted enemy
+7260300 = 0.5   # Attack power up when facing scarlet rot-afflicted enemy
+7260400 = 0.5   # Attack power up when facing frostbite-afflicted enemy
+7260800 = 1.5   # Poison & Rot in Vicinity Increases Attack Power
+# --- Damage negation & resistances
+7037800 = 3     # Occasionally Nullify Attacks When Damage Negation is Lowered
+7240000 = 5     # Improved Poise & Damage Negation When Knocked Back by Damage
+# --- Healing & recovery
+7005600 = 2     # Partial HP Restoration upon Post-Damage Attacks (rally; +1/+2 tiers derived)
+6030200 = 0.5   # HP restored when using medicinal boluses, etc. +1
+6035100 = 1.5   # Critical Hit Boosts Stamina Recovery Speed +1
+6160000 = 0.5   # HP Restoration upon Thrusting Counterattack +1
+7010200 = 8     # Flask Also Heals Allies
+7012200 = 3     # Slowly restore HP for self and nearby allies when HP is low
+7030200 = 0.3   # HP restored when using medicinal boluses, etc.
+7035100 = 0.5   # Critical Hit Boosts Stamina Recovery Speed
+7036100 = 0     # HP Recovery From Successful Guarding
+7082700 = 0.5   # Max HP Up with 3+ Small Shields Equipped
+7082800 = 0.5   # Max HP Up with 3+ Medium Shields Equipped
+7082900 = 0.5   # Max HP Up with 3+ Greatshields Equipped
+7090100 = 1.5   # Defeating enemies restores HP for allies but not for self
+7090300 = 3     # Defeating enemies near Totem Stela restores HP
+7100110 = 3.8   # Stamina Recovery upon Landing Attacks +1
+7150000 = 0     # Guard counter is given a boost based on current HP
+7160000 = 0     # HP Restoration upon Thrusting Counterattack
+7260900 = 1     # Rot in Vicinity Causes Continuous HP Recovery
+# --- Team support
+7050000 = 0.5   # Raised stamina recovery for nearby allies, but not for self
+7050100 = 7     # Items confer effect to all nearby allies
+# --- Skill / Art gauge
+6030600 = 0     # Successful guarding fills more of the Art gauge +1
+6030800 = 0.5   # Critical hits fill more of the Art gauge +1
+6090000 = 2     # Defeating enemies fills more of the Art gauge +1
+7030600 = 0     # Successful guarding fills more of the Art gauge
+7030800 = 0     # Critical hits fill more of the Art gauge
+7090000 = 1.5   # Defeating enemies fills more of the Art gauge
+# --- Weapon-class specific
+6630100 = -4    # Dormant Power Helps Discover Straight Swords
+6630200 = -4    # Dormant Power Helps Discover Greatswords
+6630300 = -4    # Dormant Power Helps Discover Colossal Swords
+6630400 = -4    # Dormant Power Helps Discover Curved Swords
+6630500 = -4    # Dormant Power Helps Discover Curved Greatswords
+6630600 = -4    # Dormant Power Helps Discover Katana
+6630700 = -4    # Dormant Power Helps Discover Twinblades
+6630800 = -4    # Dormant Power Helps Discover Thrusting Swords
+6630900 = -4    # Dormant Power Helps Discover Heavy Thrusting Swords
+6631000 = -4    # Dormant Power Helps Discover Axes
+6631100 = -4    # Dormant Power Helps Discover Greataxes
+6631200 = -4    # Dormant Power Helps Discover Hammers
+6631300 = -4    # Dormant Power Helps Discover Great Hammers
+6631400 = -4    # Dormant Power Helps Discover Flails
+6631500 = -4    # Dormant Power Helps Discover Spears
+6631600 = -4    # Dormant Power Helps Discover Great Spears
+6631700 = -4    # Dormant Power Helps Discover Halberds
+6631800 = -4    # Dormant Power Helps Discover Reapers
+6631900 = -4    # Dormant Power Helps Discover Fists
+6632000 = -4    # Dormant Power Helps Discover Claws
+6632200 = -4    # Dormant Power Helps Discover Colossal Weapons
+6632300 = -4    # Dormant Power Helps Discover Bows
+6632400 = -4    # Dormant Power Helps Discover Greatbows
+6632500 = -4    # Dormant Power Helps Discover Crossbows
+6632600 = -4    # Dormant Power Helps Discover Ballistas
+6632700 = -4    # Dormant Power Helps Discover Small Shields
+6632800 = -4    # Dormant Power Helps Discover Medium Shields
+6632900 = -4    # Dormant Power Helps Discover Greatshields
+6633000 = 1     # Dormant Power Helps Discover Staves
+6633100 = 0     # Dormant Power Helps Discover Sacred Seals
+7080000 = 0     # Improved Attack Power with 3+ Daggers Equipped
+7080100 = 0     # Improved Attack Power with 3+ Straight Swords Equipped
+7080300 = 0     # Improved Attack Power with 3+ Colossal Swords Equipped
+7080400 = 0     # Improved Attack Power with 3+ Curved Swords Equipped
+7080500 = 0     # Improved Attack Power with 3+ Curved Greatswords Equipped
+7080600 = 0     # Improved Attack Power with 3+ Katana Equipped
+7080700 = 0     # Improved Attack Power with 3+ Twinblades Equipped
+7080800 = 0     # Improved Attack Power with 3+ Thrusting Swords Equipped
+7080900 = 0     # Improved Attack Power with 3+ Heavy Thrusting Swords Equipped
+7081000 = 0     # Improved Attack Power with 3+ Axes Equipped
+7081100 = 0     # Improved Attack Power with 3+ Greataxes Equipped
+7081200 = 0     # Improved Attack Power with 3+ Hammers Equipped
+7081300 = 0     # Improved Attack Power with 3+ Great Hammers Equipped
+7081500 = 0     # Improved Attack Power with 3+ Spears Equipped
+7081700 = 0     # Improved Attack Power with 3+ Great Spears Equipped
+7081800 = 0     # Improved Attack Power with 3+ Halberds Equipped
+7081900 = 0     # Improved Attack Power with 3+ Reapers Equipped
+7082000 = 0     # Improved Attack Power with 3+ Fists Equipped
+7082200 = 0     # Improved Attack Power with 3+ Whips Equipped
+7082300 = 0     # Improved Attack Power with 3+ Colossal Weapons Equipped
+7082400 = 0     # Improved Attack Power with 3+ Bows Equipped
+7082500 = 1.5   # Max FP Up with 3+ Staves Equipped
+7082600 = 0.5   # Max FP Up with 3+ Sacred Seals Equipped
+7100100 = 1.5   # Stamina Recovery upon Landing Attacks
+7340000 = 0     # HP Restoration upon Dagger Attacks
+7340100 = 0     # HP Restoration upon Straight Sword Attacks
+7340200 = 0     # HP Restoration upon Greatsword Attacks
+7340300 = 0     # HP Restoration upon Colossal Sword Attacks
+7340400 = 0     # HP Restoration upon Curved Sword Attacks
+7340500 = 0     # HP Restoration upon Curved Greatsword Attacks
+7340600 = 0     # HP Restoration upon Katana Attacks
+7340700 = 0     # HP Restoration upon Twinblade Attacks
+7340800 = 0     # HP Restoration upon Thrusting Sword Attacks
+7340900 = 0     # HP Restoration upon Heavy Thrusting Sword Attacks
+7341000 = 0     # HP Restoration upon Axe Attacks
+7341100 = 0     # HP Restoration upon Greataxe Attacks
+7341200 = 0     # HP Restoration upon Hammer Attacks
+7341300 = 0     # HP Restoration upon Great Hammer Attacks
+7341400 = 0     # HP Restoration upon Flail Attacks
+7341500 = 0     # HP Restoration upon Spear Attacks
+7341700 = 0     # HP Restoration upon Great Spear Attacks
+7341800 = 0     # HP Restoration upon Halberd Attacks
+7341900 = 0     # HP Restoration upon Reaper Attacks
+7342000 = 0     # HP Restoration upon Fist Attacks
+7342100 = 0     # HP Restoration upon Claw Attacks
+7342200 = 0     # HP Restoration upon Whip Attacks
+7342300 = 0     # HP Restoration upon Colossal Weapon Attacks
+7342400 = 0     # HP Restoration upon Bow Attacks
+7350000 = 0     # FP Restoration upon Dagger Attacks
+7350100 = 0     # FP Restoration upon Straight Sword Attacks
+7350200 = 0     # FP Restoration upon Greatsword Attacks
+7350300 = 0     # FP Restoration upon Colossal Sword Attacks
+7350400 = 0     # FP Restoration upon Curved Sword Attacks
+7350500 = 0     # FP Restoration upon Curved Greatsword Attacks
+7350600 = 0     # FP Restoration upon Katana Attacks
+7350800 = 0     # FP Restoration upon Thrusting Sword Attacks
+7350900 = 0     # FP Restoration upon Heavy Thrusting Sword Attacks
+7351000 = 0     # FP Restoration upon Axe Attacks
+7351100 = 0     # FP Restoration upon Greataxe Attacks
+7351200 = 0     # FP Restoration upon Hammer Attacks
+7351300 = 0     # FP Restoration upon Great Hammer Attacks
+7351400 = 0     # FP Restoration upon Flail Attacks
+7351500 = 0     # FP Restoration upon Spear Attacks
+7351700 = 0     # FP Restoration upon Great Spear Attacks
+7351800 = 0     # FP Restoration upon Halberd Attacks
+7351900 = 0     # FP Restoration upon Reaper Attacks
+7352000 = 0     # FP Restoration upon Fist Attacks
+7352100 = 0     # FP Restoration upon Claw Attacks
+7352200 = 0     # FP Restoration upon Whip Attacks
+7352300 = 0     # FP Restoration upon Colossal Weapon Attacks
+7352400 = 0     # FP Restoration upon Bow Attacks
+# --- Starting items & armament skill changes
+7120900 = 1     # Stonesword Key in possession at start of expedition
+7122700 = 0.5   # Changes compatible armament's skill to Glintblade Phalanx at start of expedition
+7122800 = 0.5   # Changes compatible armament's skill to Gravitas at start of expedition
+7122900 = 0.5   # Changes compatible armament's skill to Flaming Strike at start of expedition
+7123000 = 0.5   # Changes compatible armament's skill to Eruption at start of expedition
+7123100 = 0.5   # Changes compatible armament's skill to Thunderbolt at start of expedition
+7123200 = 0.5   # Changes compatible armament's skill to Lightning Slash at start of expedition
+7123300 = 0.5   # Changes compatible armament's skill to Sacred Blade at start of expedition
+7123400 = 0.5   # Changes compatible armament's skill to Prayerful Strike at start of expedition
+7123500 = 0.5   # Changes compatible armament's skill to Poisonous Mist at start of expedition
+7123600 = 0.5   # Changes compatible armament's skill to Poison Moth Flight at start of expedition
+7123700 = 0.5   # Changes compatible armament's skill to Blood Blade at start of expedition
+7123800 = 0     # Changes compatible armament's skill to Seppuku at start of expedition
+7123900 = 0.5   # Changes compatible armament's skill to Chilling Mist at start of expedition
+7124000 = 0.5   # Changes compatible armament's skill to Hoarfrost Stomp at start of expedition
+7124100 = 0.5   # Changes compatible armament's skill to White Shadow's Lure at start of expedition
+7124300 = 0     # Changes compatible armament's skill to Endure at start of expedition
+7124400 = -0.5  # Changes compatible armament's skill to Quickstep at start of expedition
+7124500 = 0     # Changes compatible armament's skill to Storm Stomp at start of expedition
+7124600 = 1.5   # Changes compatible armament's skill to Determination at start of expedition
+7124700 = 0     # Changes compatible armament's skill to Rain of Arrows at start of expedition
+7360600 = 0     # Changes compatible armament's sorcery to Magic Glintblade at start of expedition
+7360900 = 0     # Changes compatible armament's sorcery to Carian Greatsword at start of expedition
+7361200 = 0     # Changes compatible armament's sorcery to Night Shard at start of expedition
+7361300 = 0     # Changes compatible armament's sorcery to Magma Shot at start of expedition
+7362100 = 0     # Changes compatible armament's sorcery to Briars of Punishment at start of expedition
+7370300 = 0     # Changes compatible armament's incantation to Wrath of Gold at start of expedition
+7370400 = 0     # Changes compatible armament's incantation to Lightning Spear at start of expedition
+7370600 = 0     # Changes compatible armament's incantation to O, Flame! at start of expedition
+7370900 = 0     # Changes compatible armament's incantation to Beast Claw at start of expedition
+7371500 = 0     # Changes compatible armament's incantation to Dragonfire at start of expedition
+# --- Other
+6060400 = 0.5   # Runes and Item Discovery increased for each great enemy defeated at a Fort
+6060500 = 0     # Arcane increased for each great enemy defeated at a Ruin
+7030000 = 2.5   # Improved Poise Near Totem Stela
+7030700 = 0     # Draw enemy attention while guarding
+7031900 = 1     # Critical Hits Earn Runes
+7035400 = 0     # Gesture "Crossed Legs" Builds Up Madness
+7035500 = 0     # Madness Continually Recovers FP
+7035700 = 0.5   # Switching Weapons Adds an Affinity Attack
+7040201 = 1.2   # Improved Critical Hits +1
+7060100 = 2     # Max FP increased for each Sorcerer's Rise unlocked
+7070000 = 1     # Treasure marked upon map
+7120000 = 1     # Starting armament deals magic damage
+7120100 = 1     # Starting armament deals fire damage
+7120200 = 1     # Starting armament deals lightning damage
+7120300 = 1     # Starting armament deals holy damage
+7120400 = 1     # Starting armament inflicts frost
+7120500 = 1     # Starting armament inflicts poison
+7120600 = 1     # Starting armament inflicts blood loss
+7170100 = 1.5   # Attacks Inflict Rot when Damage is Taken
+7230000 = 1.5   # Rune discount for shop purchases while on expedition
+7230001 = 2.5   # Huge rune discount for shop purchases while on expedition
+7260700 = 1     # Frostbite in Vicinity Conceals Self
+
+# ============================================================================
+# CURSES  (key = curse ID, value = points per copy; curses always stack)
+# Plus `curse_count_penalty` (top of file) per curse of any kind.
+# ============================================================================
+[curses]
+6830000 = -3    # (other stat of a derived Str/Dex curse)
+6830300 = -2    # (other stat of a derived Str/Dex curse)
+6820000 = -6    # Taking Damage Causes Poison Buildup
+6820100 = -6    # Taking Damage Causes Rot Buildup
+6820200 = -6    # Taking Damage Causes Frost Buildup
+6820300 = -6    # Taking Damage Causes Blood Loss Buildup
+6820400 = -6    # Taking Damage Causes Madness Buildup
+6820500 = -6    # Taking Damage Causes Sleep Buildup
+6820600 = -10   # Taking Damage Causes Death Buildup
+6830100 = -2    # Reduced Dexterity and Faith
+6830200 = -3    # Reduced Intelligence and Dexterity
+6830400 = -1.5  # Reduced Vigor and Arcane
+6840000 = -1    # Reduced Rune Acquisition
+6840100 = -3    # Reduced Flask HP Restoration
+6840200 = -1.5  # Ultimate Art Charging Impaired
+6850200 = -2    # All Resistances Down
+6850500 = -3    # Continuous HP Loss
+6850700 = -4    # Reduced Damage Negation After Evading
+6850800 = -5    # Repeated Evasions Lower Damage Negation
+6850900 = -2    # Reduced Damage Negation for Flask Usages
+6851200 = -8    # Lower Attack When Below Max HP
+6851300 = -6    # Poison Buildup When Below Max HP
+6851400 = -6    # Rot Buildup When Below Max HP
+6851700 = -2    # Near Death Reduces Max HP

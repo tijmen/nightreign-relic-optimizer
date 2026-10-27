@@ -1,0 +1,4560 @@
+{
+ "effects": {
+  "6001400": {
+   "sheet": "Deep Relic Effects",
+   "row": 11,
+   "cat": "Offensive",
+   "desc": "Physical Attack Up +3/4",
+   "effect": "Increases physical damage by 1.105x / 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001401": {
+   "sheet": "Deep Relic Effects",
+   "row": 11,
+   "cat": "Offensive",
+   "desc": "Physical Attack Up +3/4",
+   "effect": "Increases physical damage by 1.105x / 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001500": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001501": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001600": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001601": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001700": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001701": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001800": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6001801": {
+   "sheet": "Deep Relic Effects",
+   "row": 12,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +3/4",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.105x/1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002600": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002601": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002700": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002701": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002800": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002801": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002900": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6002901": {
+   "sheet": "Deep Relic Effects",
+   "row": 25,
+   "cat": "Defensive",
+   "desc": "Improved [Element] Damage Negation +1/2",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 15%/16%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003000": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003100": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003200": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003300": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003400": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003500": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6003600": {
+   "sheet": "Deep Relic Effects",
+   "row": 27,
+   "cat": "Defensive",
+   "desc": "Improved [Status] Resistance +1/2",
+   "effect": "Increases specified status resistance by 110/130",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6005600": {
+   "sheet": "Deep Relic Effects",
+   "row": 28,
+   "cat": "Regen",
+   "desc": "Partial HP Restoration upon Post-Damage Attacks +1/2",
+   "effect": "Same as original, but increases HP gained per hit by 25%/35%",
+   "stack": "No",
+   "notes": "+1 stacks with +2, but neither stack with +0"
+  },
+  "6005601": {
+   "sheet": "Deep Relic Effects",
+   "row": 28,
+   "cat": "Regen",
+   "desc": "Partial HP Restoration upon Post-Damage Attacks +1/2",
+   "effect": "Same as original, but increases HP gained per hit by 25%/35%",
+   "stack": "No",
+   "notes": "+1 stacks with +2, but neither stack with +0"
+  },
+  "6030200": {
+   "sheet": "Deep Relic Effects",
+   "row": 30,
+   "cat": "Regen",
+   "desc": "HP restored when using medicinal boluses, etc. +1",
+   "effect": "Replenish 80 HP from certain consumables",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6030600": {
+   "sheet": "Deep Relic Effects",
+   "row": 19,
+   "cat": "Offensive",
+   "desc": "Art gauge charged from successful guarding +1",
+   "effect": "Increases characterSkillGauge by 1.5 upon blocking an attack",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6030800": {
+   "sheet": "Deep Relic Effects",
+   "row": 20,
+   "cat": "Offensive",
+   "desc": "Art gauge fills moderately upon critical hit +1",
+   "effect": "Increases characterSkillGauge by 6.5 upon riposte",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6030900": {
+   "sheet": "Deep Relic Effects",
+   "row": 14,
+   "cat": "Offensive",
+   "desc": "Physical attack power increases after using grease items +1/2",
+   "effect": "Increases physical damage by 1.17x/1.2x for 30 seconds after using grease",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6030901": {
+   "sheet": "Deep Relic Effects",
+   "row": 14,
+   "cat": "Offensive",
+   "desc": "Physical attack power increases after using grease items +1/2",
+   "effect": "Increases physical damage by 1.17x/1.2x for 30 seconds after using grease",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6035100": {
+   "sheet": "Relic Effects",
+   "row": 65,
+   "cat": "Regen",
+   "desc": "Critical Hit Boosts Stamina Recovery Speed",
+   "effect": "Increases stamina recovery by 10/s for 15 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "6040100": {
+   "sheet": "Deep Relic Effects",
+   "row": 17,
+   "cat": "Offensive",
+   "desc": "Improved Guard Counters +1/2",
+   "effect": "Increases guard counter damage by 1.25x/1.29x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6040101": {
+   "sheet": "Deep Relic Effects",
+   "row": 17,
+   "cat": "Offensive",
+   "desc": "Improved Guard Counters +1/2",
+   "effect": "Increases guard counter damage by 1.25x/1.29x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6040300": {
+   "sheet": "Deep Relic Effects",
+   "row": 18,
+   "cat": "Offensive",
+   "desc": "Improved [Consumable] Damage +1/2",
+   "effect": "Increases pot/knife/stone/perfume damage by 1.3x/1.35x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6043100": {
+   "sheet": "Deep Relic Effects",
+   "row": 18,
+   "cat": "Offensive",
+   "desc": "Improved [Consumable] Damage +1/2",
+   "effect": "Increases pot/knife/stone/perfume damage by 1.3x/1.35x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6060300": {
+   "sheet": "Deep Relic Effects",
+   "row": 6,
+   "cat": "Exploration",
+   "desc": "Max HP increased for each great enemy defeated at a Great Church",
+   "effect": "Increases maximum HP by 1.05x for each boss killed at a great church",
+   "stack": "No",
+   "notes": ""
+  },
+  "6060400": {
+   "sheet": "Deep Relic Effects",
+   "row": 7,
+   "cat": "Exploration",
+   "desc": "Runes and Item Discovery increased for each great enemy defeated at a Fort",
+   "effect": "Increases discovery by 16 and rune gain by 1.055x for each boss killed at a fort",
+   "stack": "No",
+   "notes": ""
+  },
+  "6060500": {
+   "sheet": "Deep Relic Effects",
+   "row": 8,
+   "cat": "Exploration",
+   "desc": "Arcane increased for each great enemy defeated at a Ruin",
+   "effect": "Increases arcane by 4 for each boss killed at a ruin",
+   "stack": "No",
+   "notes": ""
+  },
+  "6060600": {
+   "sheet": "Deep Relic Effects",
+   "row": 9,
+   "cat": "Exploration",
+   "desc": "Max stamina increased for each great enemy defeated at a Great Encampment",
+   "effect": "Increases maximum stamina by 1.075x for each boss killed at a camp",
+   "stack": "No",
+   "notes": ""
+  },
+  "6090000": {
+   "sheet": "Deep Relic Effects",
+   "row": 21,
+   "cat": "Offensive",
+   "desc": "Defeating enemies fills more of the Art gauge +1",
+   "effect": "Increases characterSkillGauge by 6.5 upon killing enemies",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6160000": {
+   "sheet": "Deep Relic Effects",
+   "row": 29,
+   "cat": "Regen",
+   "desc": "HP Restoration upon Thrusting Counterattack +1",
+   "effect": "Restores [MaxHP * 0.033] on counterhits",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260000": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260001": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260300": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260301": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260400": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6260401": {
+   "sheet": "Deep Relic Effects",
+   "row": 15,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing poison/scarlet rot/frostbite-afflicted enemy +1/2",
+   "effect": "Increases damage by 1.16x/1.2x when attacking an enemy suffering from the specified status",
+   "stack": "No",
+   "notes": "Different levels stack (ex. +1 stacks with +2)"
+  },
+  "6500000": {
+   "sheet": "Deep Relic Effects",
+   "row": 32,
+   "cat": "Character",
+   "desc": "[Wylder] Character Skill inflicts Blood Loss",
+   "effect": "Skill inflicts 60 (impact) / 55 (pull) bleed on hit",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500100": {
+   "sheet": "Deep Relic Effects",
+   "row": 33,
+   "cat": "Character",
+   "desc": "[Guardian] Character Skill Boosts Damage Negation of Nearby Allies",
+   "effect": "Increases damage negation for self and allies by 12% for 30 seconds after using skill",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500200": {
+   "sheet": "Deep Relic Effects",
+   "row": 34,
+   "cat": "Character",
+   "desc": "[Ironeye] Character Skill Inflicts Heavy Poison Damage on Poisoned Enemies",
+   "effect": "Skill inflicts 70 poison. Deals [MaxHP * 0.0025] + 250 damage on poison-afflicted enemies",
+   "stack": "No",
+   "notes": "Testing suggests its still based on max HP"
+  },
+  "6500300": {
+   "sheet": "Deep Relic Effects",
+   "row": 35,
+   "cat": "Character",
+   "desc": "[Duchess] Use Character Skill for Brief Invulnerability",
+   "effect": "Makes you immune to damage for 0.4 seconds after using skill",
+   "stack": "No",
+   "notes": "Translates to 24 iframes at 60FPS"
+  },
+  "6500400": {
+   "sheet": "Deep Relic Effects",
+   "row": 36,
+   "cat": "Character",
+   "desc": "[Raider] Hit With Character Skill to Reduce Enemy Attack Power",
+   "effect": "Decreases enemy damage dealt by 0.87x after hitting them with skill for 13 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500500": {
+   "sheet": "Deep Relic Effects",
+   "row": 37,
+   "cat": "Character",
+   "desc": "[Revenant] Increases Max FP upon Ability Activation",
+   "effect": "Permanently increases maximum FP by 1.0075x from 0 to 20 stacks Permanently increases maximum FP by 1.0085x from 21 to 40 stacks Permanently increases maximum FP by 1.0095x from 41 to 60 stacks (cap, total 51% increased max FP)",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500600": {
+   "sheet": "Deep Relic Effects",
+   "row": 38,
+   "cat": "Character",
+   "desc": "[Recluse] Collect Affinity Residues to Negate Affinity",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 20% upon absorbing respective residue for 30 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500700": {
+   "sheet": "Deep Relic Effects",
+   "row": 39,
+   "cat": "Character",
+   "desc": "[Executor] Slowly Restore HP upon Ability Activation",
+   "effect": "Restores [MaxHP * 0.0027] + 3 for 30 seconds after passive activates (recovering from status effect)",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500800": {
+   "sheet": "Deep Relic Effects",
+   "row": 40,
+   "cat": "Character",
+   "desc": "[Scholar] Reduced FP consumption when using Character Skill on self",
+   "effect": "Reduces FP consumption by 0.85x for 40 seconds after using character skill self buff",
+   "stack": "No",
+   "notes": ""
+  },
+  "6500900": {
+   "sheet": "Deep Relic Effects",
+   "row": 41,
+   "cat": "Character",
+   "desc": "[Undertaker] Executing Art readies Character Skill",
+   "effect": "Allows you to perform Trance immediately after activating ultimate. Works with temporary ultimate use.",
+   "stack": "No",
+   "notes": ""
+  },
+  "6600000": {
+   "sheet": "Deep Relic Effects",
+   "row": 16,
+   "cat": "Offensive",
+   "desc": "Sleep/Madness in Vicinity Improves Attack Power +0/+1",
+   "effect": "Increases damage by 1.12x/1.22x after sleep/madness procs",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6600001": {
+   "sheet": "Deep Relic Effects",
+   "row": 16,
+   "cat": "Offensive",
+   "desc": "Sleep/Madness in Vicinity Improves Attack Power +0/+1",
+   "effect": "Increases damage by 1.12x/1.22x after sleep/madness procs",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6600100": {
+   "sheet": "Deep Relic Effects",
+   "row": 16,
+   "cat": "Offensive",
+   "desc": "Sleep/Madness in Vicinity Improves Attack Power +0/+1",
+   "effect": "Increases damage by 1.12x/1.22x after sleep/madness procs",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6600101": {
+   "sheet": "Deep Relic Effects",
+   "row": 16,
+   "cat": "Offensive",
+   "desc": "Sleep/Madness in Vicinity Improves Attack Power +0/+1",
+   "effect": "Increases damage by 1.12x/1.22x after sleep/madness procs",
+   "stack": "No",
+   "notes": "+0 stacks with +1"
+  },
+  "6610400": {
+   "sheet": "Deep Relic Effects",
+   "row": 2,
+   "cat": "Stat",
+   "desc": "Increased Maximum HP",
+   "effect": "Increases maximum HP by 1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6610500": {
+   "sheet": "Deep Relic Effects",
+   "row": 3,
+   "cat": "Stat",
+   "desc": "Increased Maximum FP",
+   "effect": "Increases maximum FP by 1.15x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6610600": {
+   "sheet": "Deep Relic Effects",
+   "row": 4,
+   "cat": "Stat",
+   "desc": "Increased Maximum Stamina",
+   "effect": "Increases maximum stamina by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6610700": {
+   "sheet": "Deep Relic Effects",
+   "row": 23,
+   "cat": "Offensive",
+   "desc": "Reduced FP Consumption +0/1/2",
+   "effect": "Reduces FP consumption by 0.92x/0.87x/0.84x",
+   "stack": "Yes",
+   "notes": "Higher tier (+1/2) does not seem to appear on random relics"
+  },
+  "6610800": {
+   "sheet": "Deep Relic Effects",
+   "row": 13,
+   "cat": "Offensive",
+   "desc": "Improved Affinity Attack Power +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage by 1.05x/1.08x/1.1x",
+   "stack": "Yes",
+   "notes": "Affects spells"
+  },
+  "6610801": {
+   "sheet": "Deep Relic Effects",
+   "row": 13,
+   "cat": "Offensive",
+   "desc": "Improved Affinity Attack Power +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage by 1.05x/1.08x/1.1x",
+   "stack": "Yes",
+   "notes": "Affects spells"
+  },
+  "6610802": {
+   "sheet": "Deep Relic Effects",
+   "row": 13,
+   "cat": "Offensive",
+   "desc": "Improved Affinity Attack Power +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage by 1.05x/1.08x/1.1x",
+   "stack": "Yes",
+   "notes": "Affects spells"
+  },
+  "6611001": {
+   "sheet": "Deep Relic Effects",
+   "row": 24,
+   "cat": "Defensive",
+   "desc": "Improved Physical Damage Negation +1/2",
+   "effect": "Increases physical damage negation by 10.5%/12%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611002": {
+   "sheet": "Deep Relic Effects",
+   "row": 24,
+   "cat": "Defensive",
+   "desc": "Improved Physical Damage Negation +1/2",
+   "effect": "Increases physical damage negation by 10.5%/12%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611100": {
+   "sheet": "Deep Relic Effects",
+   "row": 26,
+   "cat": "Defensive",
+   "desc": "Improved Affinity Damage Negation +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage negation by 6/10.5/12%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611101": {
+   "sheet": "Deep Relic Effects",
+   "row": 26,
+   "cat": "Defensive",
+   "desc": "Improved Affinity Damage Negation +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage negation by 6/10.5/12%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611102": {
+   "sheet": "Deep Relic Effects",
+   "row": 26,
+   "cat": "Defensive",
+   "desc": "Improved Affinity Damage Negation +0/1/2",
+   "effect": "Increases magic, fire, lightning, and holy damage negation by 6/10.5/12%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611200": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611201": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611202": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611300": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611301": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611302": {
+   "sheet": "Deep Relic Effects",
+   "row": 22,
+   "cat": "Offensive",
+   "desc": "Improved Sorceries/Incantations +0/1/2",
+   "effect": "Increases sorcery/incant damage by 1.05x/1.085x/1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6611400": {
+   "sheet": "Deep Relic Effects",
+   "row": 31,
+   "cat": "Regen",
+   "desc": "Improved Flask HP Restoration",
+   "effect": "Increases HP gained from flasks by 1.1x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621300": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621400": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621500": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621600": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621700": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621800": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6621900": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622300": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622500": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622700": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622800": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622900": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6623000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6623100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624300": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624400": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6624500": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6630100": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630200": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630300": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630400": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630500": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630600": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630700": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630800": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6630900": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631000": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631100": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631200": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631300": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631400": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631500": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631600": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631700": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631800": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6631900": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632000": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632200": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632300": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632400": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632500": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632600": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632700": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632800": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6632900": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6633000": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6633100": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6640000": {
+   "sheet": "Deep Relic Effects",
+   "row": 42,
+   "cat": "Character",
+   "desc": "[Wylder] Improved Mind, Reduced Vigor",
+   "effect": "Decreases vigor by 5, increases mind by 10",
+   "stack": "No",
+   "notes": "Stat changes assumes level 15 (same applies to the effects below); -100 HP, +50 FP"
+  },
+  "6640100": {
+   "sheet": "Deep Relic Effects",
+   "row": 43,
+   "cat": "Character",
+   "desc": "[Wylder] Improved Intelligence and Faith, Reduced Strength and Dexterity",
+   "effect": "Decreases strength by 7 and dexterity by 5, increases intelligence and faith by 15",
+   "stack": "No",
+   "notes": ""
+  },
+  "6641000": {
+   "sheet": "Deep Relic Effects",
+   "row": 44,
+   "cat": "Character",
+   "desc": "[Guardian] Improved Strength and Dexterity, Reduced Vigor",
+   "effect": "Decreases vigor by 8, increases strength by 9 and dexterity by 19",
+   "stack": "No",
+   "notes": "~16% AP increase for halberds, ~20% increase for heavy thrusting swords; -160 HP"
+  },
+  "6641100": {
+   "sheet": "Deep Relic Effects",
+   "row": 45,
+   "cat": "Character",
+   "desc": "[Guardian] Improved Mind and Faith, Reduced Vigor",
+   "effect": "Decreases vigor by 6, increases mind by 8 and faith by 17",
+   "stack": "No",
+   "notes": "-120 HP, +40 FP"
+  },
+  "6642000": {
+   "sheet": "Deep Relic Effects",
+   "row": 46,
+   "cat": "Character",
+   "desc": "[Ironeye] Improved Arcane, Reduced Dexterity",
+   "effect": "Decreases dexterity by 9, increases arcane by 15",
+   "stack": "No",
+   "notes": "~26% increase in status build up, ~ -6% reduction to bow attack"
+  },
+  "6642100": {
+   "sheet": "Deep Relic Effects",
+   "row": 47,
+   "cat": "Character",
+   "desc": "[Ironeye] Improved Vigor and Strength, Reduced Dexterity",
+   "effect": "Decreases dexterity by 13, increases strength by 20 and vigor by 5",
+   "stack": "No",
+   "notes": "+100 HP"
+  },
+  "6643000": {
+   "sheet": "Deep Relic Effects",
+   "row": 48,
+   "cat": "Character",
+   "desc": "[Duchess] Improved Vigor and Strength, Reduced Mind",
+   "effect": "Decreases mind by 14, increases strength by 24 and vigor by 3",
+   "stack": "No",
+   "notes": "-70 FP, +60 HP"
+  },
+  "6644000": {
+   "sheet": "Deep Relic Effects",
+   "row": 50,
+   "cat": "Character",
+   "desc": "[Raider] Improved Mind and Intelligence, Reduced Vigor and Endurance",
+   "effect": "Decreases vigor by 8 and endurance by 4, increases intelligence by 35 and mind by 9",
+   "stack": "No",
+   "notes": "-160 HP, +45 FP"
+  },
+  "6644100": {
+   "sheet": "Deep Relic Effects",
+   "row": 51,
+   "cat": "Character",
+   "desc": "[Raider] Improved Arcane, Reduced Vigor",
+   "effect": "Decreases vigor by 4, increases arcane by 17",
+   "stack": "No",
+   "notes": "-80 HP"
+  },
+  "6645000": {
+   "sheet": "Deep Relic Effects",
+   "row": 52,
+   "cat": "Character",
+   "desc": "[Revenant] Improved Vigor and Endurance, Reduced Mind",
+   "effect": "Decreases mind by 11, increases vigor by 5 and endurance by 5",
+   "stack": "No",
+   "notes": "-55 FP, +100 HP"
+  },
+  "6645100": {
+   "sheet": "Deep Relic Effects",
+   "row": 53,
+   "cat": "Character",
+   "desc": "[Revenant] Improved Strength, Reduced Faith",
+   "effect": "Decreases faith by 6, increases strength by 25",
+   "stack": "No",
+   "notes": ""
+  },
+  "6646000": {
+   "sheet": "Deep Relic Effects",
+   "row": 54,
+   "cat": "Character",
+   "desc": "[Recluse] Improved Vigor, Endurance, and Dexterity, Reduced Intelligence and Faith",
+   "effect": "Decreases intelligence and faith by 10, increases dexterity by 20, endurance by 5, and vigor by 4",
+   "stack": "No",
+   "notes": "+80 HP"
+  },
+  "6646100": {
+   "sheet": "Deep Relic Effects",
+   "row": 55,
+   "cat": "Character",
+   "desc": "[Recluse] Improved Intelligence and Faith, Reduced Mind",
+   "effect": "Decreases mind by 13, increases intelligence and faith by 12",
+   "stack": "No",
+   "notes": "-65 FP, ~10% increase in spell damage"
+  },
+  "6647000": {
+   "sheet": "Deep Relic Effects",
+   "row": 56,
+   "cat": "Character",
+   "desc": "[Executor] Improved Vigor and Endurance, Reduced Arcane",
+   "effect": "Decreases arcane by 13, increases vigor by 5 and endurance by 6",
+   "stack": "No",
+   "notes": "+100 HP"
+  },
+  "6647100": {
+   "sheet": "Deep Relic Effects",
+   "row": 57,
+   "cat": "Character",
+   "desc": "[Executor] Improved Dexterity and Arcane, Reduced Vigor",
+   "effect": "Decreases vigor by 7, increases arcane by 9 and dexterity by 12",
+   "stack": "No",
+   "notes": "-140 HP, ~11% increase in status build up, ~6.3% increase in AP for katana"
+  },
+  "6647200": {
+   "sheet": "Deep Relic Effects",
+   "row": 58,
+   "cat": "Character",
+   "desc": "[Scholar] Improved Mind, Reduced Vigor",
+   "effect": "Decreases vigor by 3, increases mind by 9",
+   "stack": "No",
+   "notes": ""
+  },
+  "6647300": {
+   "sheet": "Deep Relic Effects",
+   "row": 59,
+   "cat": "Character",
+   "desc": "[Scholar] Improved Endurance and Dexterity, Reduced Intelligence and Arcane",
+   "effect": "Decreases intelligence by 4 and arcane by 20, increases endurance by 6 and dexterity by 40",
+   "stack": "No",
+   "notes": ""
+  },
+  "6647400": {
+   "sheet": "Deep Relic Effects",
+   "row": 60,
+   "cat": "Character",
+   "desc": "[Undertaker] Improved Dexterity, Reduced Vigor and Faith",
+   "effect": "Decreases vigor by 5 and faith by 13, increases dexterity by 19",
+   "stack": "No",
+   "notes": ""
+  },
+  "6647500": {
+   "sheet": "Deep Relic Effects",
+   "row": 61,
+   "cat": "Character",
+   "desc": "[Undertaker] Improved Mind and Faith, Reduced Strength",
+   "effect": "Decreases strength by 15, increases mind by 9 and faith by 12",
+   "stack": "No",
+   "notes": ""
+  },
+  "7000000": {
+   "sheet": "Relic Effects",
+   "row": 2,
+   "cat": "Stat",
+   "desc": "Vigor +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+20 / +40 / +60 Max HP"
+  },
+  "7000001": {
+   "sheet": "Relic Effects",
+   "row": 2,
+   "cat": "Stat",
+   "desc": "Vigor +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+20 / +40 / +60 Max HP"
+  },
+  "7000002": {
+   "sheet": "Relic Effects",
+   "row": 2,
+   "cat": "Stat",
+   "desc": "Vigor +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+20 / +40 / +60 Max HP"
+  },
+  "7000090": {
+   "sheet": "Relic Effects",
+   "row": 7,
+   "cat": "Stat",
+   "desc": "Increased maximum HP/FP/Stamina",
+   "effect": "Increases vigor/mind/endurance by 5",
+   "stack": "No",
+   "notes": "+100 Max HP / 25 Max FP / 10 Max Stamina. Exclusive to (Dark) Night of the Fathom, Wise, Champion respectively"
+  },
+  "7000100": {
+   "sheet": "Relic Effects",
+   "row": 3,
+   "cat": "Stat",
+   "desc": "Mind +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+5 / +10 / +15 Max FP"
+  },
+  "7000101": {
+   "sheet": "Relic Effects",
+   "row": 3,
+   "cat": "Stat",
+   "desc": "Mind +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+5 / +10 / +15 Max FP"
+  },
+  "7000102": {
+   "sheet": "Relic Effects",
+   "row": 3,
+   "cat": "Stat",
+   "desc": "Mind +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+5 / +10 / +15 Max FP"
+  },
+  "7000190": {
+   "sheet": "Relic Effects",
+   "row": 7,
+   "cat": "Stat",
+   "desc": "Increased maximum HP/FP/Stamina",
+   "effect": "Increases vigor/mind/endurance by 5",
+   "stack": "No",
+   "notes": "+100 Max HP / 25 Max FP / 10 Max Stamina. Exclusive to (Dark) Night of the Fathom, Wise, Champion respectively"
+  },
+  "7000200": {
+   "sheet": "Relic Effects",
+   "row": 4,
+   "cat": "Stat",
+   "desc": "Endurance +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+2 / +4 / +6 Max Stamina"
+  },
+  "7000201": {
+   "sheet": "Relic Effects",
+   "row": 4,
+   "cat": "Stat",
+   "desc": "Endurance +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+2 / +4 / +6 Max Stamina"
+  },
+  "7000202": {
+   "sheet": "Relic Effects",
+   "row": 4,
+   "cat": "Stat",
+   "desc": "Endurance +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "+2 / +4 / +6 Max Stamina"
+  },
+  "7000290": {
+   "sheet": "Relic Effects",
+   "row": 7,
+   "cat": "Stat",
+   "desc": "Increased maximum HP/FP/Stamina",
+   "effect": "Increases vigor/mind/endurance by 5",
+   "stack": "No",
+   "notes": "+100 Max HP / 25 Max FP / 10 Max Stamina. Exclusive to (Dark) Night of the Fathom, Wise, Champion respectively"
+  },
+  "7000300": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000301": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000302": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000400": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000401": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000402": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000500": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000501": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000502": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000600": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000601": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000602": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000700": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000701": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000702": {
+   "sheet": "Relic Effects",
+   "row": 5,
+   "cat": "Stat",
+   "desc": "Strength/Dexterity/Intelligence/Faith/Arcane +1/2/3",
+   "effect": "Self-explanatory",
+   "stack": "Yes",
+   "notes": "3 Arc adds ~5.4% of base bleed"
+  },
+  "7000800": {
+   "sheet": "Relic Effects",
+   "row": 58,
+   "cat": "Regen",
+   "desc": "Character Skill Cooldown +1/2/3",
+   "effect": "Reduces skill cooldown by 0.95x/0.925x/0.9x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7000801": {
+   "sheet": "Relic Effects",
+   "row": 58,
+   "cat": "Regen",
+   "desc": "Character Skill Cooldown +1/2/3",
+   "effect": "Reduces skill cooldown by 0.95x/0.925x/0.9x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7000802": {
+   "sheet": "Relic Effects",
+   "row": 58,
+   "cat": "Regen",
+   "desc": "Character Skill Cooldown +1/2/3",
+   "effect": "Reduces skill cooldown by 0.95x/0.925x/0.9x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7000900": {
+   "sheet": "Relic Effects",
+   "row": 59,
+   "cat": "Regen",
+   "desc": "Ultimate Art Gauge +1/2/3",
+   "effect": "Increases ultimate gauge gain by 1.05x/1.075x/1.1x",
+   "stack": "Yes",
+   "notes": "Only affects passive Ultimate gauge gain during combat"
+  },
+  "7000901": {
+   "sheet": "Relic Effects",
+   "row": 59,
+   "cat": "Regen",
+   "desc": "Ultimate Art Gauge +1/2/3",
+   "effect": "Increases ultimate gauge gain by 1.05x/1.075x/1.1x",
+   "stack": "Yes",
+   "notes": "Only affects passive Ultimate gauge gain during combat"
+  },
+  "7000902": {
+   "sheet": "Relic Effects",
+   "row": 59,
+   "cat": "Regen",
+   "desc": "Ultimate Art Gauge +1/2/3",
+   "effect": "Increases ultimate gauge gain by 1.05x/1.075x/1.1x",
+   "stack": "Yes",
+   "notes": "Only affects passive Ultimate gauge gain during combat"
+  },
+  "7001000": {
+   "sheet": "Relic Effects",
+   "row": 6,
+   "cat": "Stat",
+   "desc": "Poise +1/2/3",
+   "effect": "Reduces incoming poise damage by 0.95x/0.9x/0.85x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001001": {
+   "sheet": "Relic Effects",
+   "row": 6,
+   "cat": "Stat",
+   "desc": "Poise +1/2/3",
+   "effect": "Reduces incoming poise damage by 0.95x/0.9x/0.85x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001002": {
+   "sheet": "Relic Effects",
+   "row": 6,
+   "cat": "Stat",
+   "desc": "Poise +1/2/3",
+   "effect": "Reduces incoming poise damage by 0.95x/0.9x/0.85x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001100": {
+   "sheet": "Relic Effects",
+   "row": 68,
+   "cat": "Regen",
+   "desc": "Continuous HP recovery",
+   "effect": "Recovers 2 HP/s",
+   "stack": "Yes",
+   "notes": "Exclusive to Blessed Iron Coin and Dark Night of the Fathom"
+  },
+  "7001400": {
+   "sheet": "Relic Effects",
+   "row": 27,
+   "cat": "Offensive",
+   "desc": "Physical Attack Up +0/1/2",
+   "effect": "Increases physical damage by 1.04x/1.05x/1.06x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001401": {
+   "sheet": "Relic Effects",
+   "row": 27,
+   "cat": "Offensive",
+   "desc": "Physical Attack Up +0/1/2",
+   "effect": "Increases physical damage by 1.04x/1.05x/1.06x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001402": {
+   "sheet": "Relic Effects",
+   "row": 27,
+   "cat": "Offensive",
+   "desc": "Physical Attack Up +0/1/2",
+   "effect": "Increases physical damage by 1.04x/1.05x/1.06x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001500": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001501": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001502": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001600": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001601": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001602": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001700": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001701": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001702": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001800": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001801": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7001802": {
+   "sheet": "Relic Effects",
+   "row": 30,
+   "cat": "Offensive",
+   "desc": "Magic/Fire/Lightning/Holy Attack Up +0/1/2",
+   "effect": "Increases magic/fire/lightning/holy damage by 1.045x/1.055x/1.065x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7002600": {
+   "sheet": "Relic Effects",
+   "row": 53,
+   "cat": "Defensive",
+   "desc": "Magic/Fire/Lightning/Holy Damage Negation Up",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 10%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7002700": {
+   "sheet": "Relic Effects",
+   "row": 53,
+   "cat": "Defensive",
+   "desc": "Magic/Fire/Lightning/Holy Damage Negation Up",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 10%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7002800": {
+   "sheet": "Relic Effects",
+   "row": 53,
+   "cat": "Defensive",
+   "desc": "Magic/Fire/Lightning/Holy Damage Negation Up",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 10%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7002900": {
+   "sheet": "Relic Effects",
+   "row": 53,
+   "cat": "Defensive",
+   "desc": "Magic/Fire/Lightning/Holy Damage Negation Up",
+   "effect": "Increases magic/fire/lightning/holy damage negation by 10%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003000": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003100": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003200": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003300": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003400": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003500": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7003600": {
+   "sheet": "Relic Effects",
+   "row": 8,
+   "cat": "Stat",
+   "desc": "Improved [Status] Resistance",
+   "effect": "Increases specified status resistance by 75",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7005600": {
+   "sheet": "Relic Effects",
+   "row": 60,
+   "cat": "Regen",
+   "desc": "Partial HP Restoration upon Post-Damage Attacks",
+   "effect": "Replenishes HP on hit for a short period of time after taking damage",
+   "stack": "No",
+   "notes": "Much stronger healing than other heal on hit effects. Amount of healing varies by attack performed. Does not stack with Hand of Malenia (which will take priority and has great healing effects)."
+  },
+  "7006000": {
+   "sheet": "Relic Effects",
+   "row": 31,
+   "cat": "Offensive",
+   "desc": "Improved stance breaking when two handing",
+   "effect": "Increases poise damage by 1.05x when 2 handing the weapon",
+   "stack": "Yes",
+   "notes": "Does not apply to bows."
+  },
+  "7006100": {
+   "sheet": "Relic Effects",
+   "row": 32,
+   "cat": "Offensive",
+   "desc": "Improved stance breaking while wielding two armaments",
+   "effect": "Increases poise damage by 1.05x when powerstancing (dual wielding 2 weapons of the same type)",
+   "stack": "Yes",
+   "notes": "Can confirm applies to ground L1 attack and jump L1."
+  },
+  "7006500": {
+   "sheet": "Relic Effects",
+   "row": 69,
+   "cat": "Regen",
+   "desc": "Continuous FP Recovery",
+   "effect": "Recovers 1 FP/5s",
+   "stack": "Yes",
+   "notes": "Exclusive to Will of the Balancers"
+  },
+  "7006600": {
+   "sheet": "Relic Effects",
+   "row": 28,
+   "cat": "Offensive",
+   "desc": "Improved Melee Attack Power",
+   "effect": "Increases all attack power by 1.05x. Affects both weapon and skills.",
+   "stack": "Yes",
+   "notes": "Exclusive to Will of the Balancers and Will of Balance"
+  },
+  "7006700": {
+   "sheet": "Relic Effects",
+   "row": 29,
+   "cat": "Offensive",
+   "desc": "Improved Skill Attack Power",
+   "effect": "Increases skill attack power by 1.15x",
+   "stack": "Yes",
+   "notes": "Exclusive to Will of the Balancers and Will of Balance"
+  },
+  "7010200": {
+   "sheet": "Relic Effects",
+   "row": 17,
+   "cat": "Exploration",
+   "desc": "Flask Also Heals Allies",
+   "effect": "Heals allies for 50% of flask HP in a radius",
+   "stack": "No",
+   "notes": "Currently bugged; sometimes has a chance to not heal the wearer. Will not heal teammates in iframes."
+  },
+  "7010500": {
+   "sheet": "Relic Effects",
+   "row": 81,
+   "cat": "Character",
+   "desc": "[Wylder] Art activation spreads fire in the area",
+   "effect": "Ultimate art leaves behind a small area of fire that does DoT.",
+   "stack": "No",
+   "notes": ""
+  },
+  "7010700": {
+   "sheet": "Relic Effects",
+   "row": 95,
+   "cat": "Character",
+   "desc": "[Duchess] Successive dagger attack reprises event upon nearby enemies",
+   "effect": "Deals extra DoT damage after completing a full light attack chain.",
+   "stack": "No",
+   "notes": "~36/39/39% extra damage from 1h/ 2h/ powerstance attack chain"
+  },
+  "7010900": {
+   "sheet": "Relic Effects",
+   "row": 100,
+   "cat": "Character",
+   "desc": "[Revenant] Expend own HP to fully heal nearby allies when activating Art",
+   "effect": "Decreases current HP by 50% on ultimate usage to fully heal allies' HP",
+   "stack": "No",
+   "notes": ""
+  },
+  "7011000": {
+   "sheet": "Relic Effects",
+   "row": 84,
+   "cat": "Character",
+   "desc": "[Guardian] Increased skill duration",
+   "effect": "Allows you to briefly charge this skill to trigger a much bigger AoE and longer lasting tornado. Can block projectile attacks.",
+   "stack": "No",
+   "notes": ""
+  },
+  "7011200": {
+   "sheet": "Relic Effects",
+   "row": 101,
+   "cat": "Character",
+   "desc": "[Revenant] Trigger ghostflame explosion during Ultimate Art activation",
+   "effect": "Performs a ghostflame explosion on ultimate. 20 base magic damage",
+   "stack": "No",
+   "notes": ""
+  },
+  "7011600": {
+   "sheet": "Relic Effects",
+   "row": 86,
+   "cat": "Character",
+   "desc": "[Guardian] Creates whirlwind when charging halberd attacks",
+   "effect": "Performs a whirlwind attack after using halberd charged heavies",
+   "stack": "No",
+   "notes": ""
+  },
+  "7011700": {
+   "sheet": "Relic Effects",
+   "row": 109,
+   "cat": "Character",
+   "desc": "[Executor] Roaring restores HP while art is active",
+   "effect": "Restores [MaxHP * 0.15] after using the roar attack in the ultimate",
+   "stack": "No",
+   "notes": ""
+  },
+  "7012000": {
+   "sheet": "Relic Effects",
+   "row": 85,
+   "cat": "Character",
+   "desc": "[Guardian] Slowly restores nearby allies HP while Art is active",
+   "effect": "Allies restore [MaxHP * 0.1] + 12 HP/0.5s when ultimate is held",
+   "stack": "No",
+   "notes": ""
+  },
+  "7012200": {
+   "sheet": "Relic Effects",
+   "row": 61,
+   "cat": "Regen",
+   "desc": "Slowly restore HP for self and nearby allies when HP is low",
+   "effect": "Restores [MaxHP * 0.005] + 1 HP/s for 50 seconds when HP is below 20%",
+   "stack": "No",
+   "notes": "Regen stays even after you go above 20% HP"
+  },
+  "7012300": {
+   "sheet": "Relic Effects",
+   "row": 54,
+   "cat": "Defensive",
+   "desc": "Improved Damage Negation at Low HP",
+   "effect": "Increases damage negation by 16% when HP is below 40%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7020000": {
+   "sheet": "Relic Effects",
+   "row": 82,
+   "cat": "Character",
+   "desc": "[Wylder] Standard attacks enhanced with fiery follow-ups when using Character Skill (greatsword only)",
+   "effect": "Allows you to perform a light attack follow up after using claw shot. Adds 12 fire AP to the weapon",
+   "stack": "No",
+   "notes": ""
+  },
+  "7030000": {
+   "sheet": "Relic Effects",
+   "row": 99,
+   "cat": "Character",
+   "desc": "Improved Poise Near Totem Stela",
+   "effect": "Reduces incoming poise damage by 0.1x while in the vicinity of Raider's ultimate",
+   "stack": "No",
+   "notes": ""
+  },
+  "7030200": {
+   "sheet": "Relic Effects",
+   "row": 63,
+   "cat": "Regen",
+   "desc": "HP restored when using cured meats, medicinal boluses, etc.",
+   "effect": "Restores 50 HP on consumption",
+   "stack": "No",
+   "notes": ""
+  },
+  "7030600": {
+   "sheet": "Relic Effects",
+   "row": 64,
+   "cat": "Regen",
+   "desc": "Art gauge charged from successful guarding",
+   "effect": "Increases Ultimate Art Gauge by 1",
+   "stack": "No",
+   "notes": ""
+  },
+  "7030700": {
+   "sheet": "Relic Effects",
+   "row": 55,
+   "cat": "Defensive",
+   "desc": "Draw enemy attention while guarding",
+   "effect": "Increases aggro when holding the block button",
+   "stack": "No",
+   "notes": "Does not guarantee aggro"
+  },
+  "7030800": {
+   "sheet": "Relic Effects",
+   "row": 62,
+   "cat": "Regen",
+   "desc": "Art gauge fills moderately upon critical hit",
+   "effect": "Increases Ultimate Art Gauge by 5",
+   "stack": "No",
+   "notes": ""
+  },
+  "7030900": {
+   "sheet": "Relic Effects",
+   "row": 37,
+   "cat": "Offensive",
+   "desc": "Attack power increases after using grease items",
+   "effect": "Increases physical damage by 1.1x for 30 seconds",
+   "stack": "No",
+   "notes": "Same duration as grease"
+  },
+  "7031200": {
+   "sheet": "Relic Effects",
+   "row": 102,
+   "cat": "Character",
+   "desc": "[Revenant] Strengthens family and allies when Ultimate Art is activated",
+   "effect": "Increases ally damage by 1.25x for 30 seconds after ultimate art usage",
+   "stack": "No",
+   "notes": ""
+  },
+  "7031300": {
+   "sheet": "Relic Effects",
+   "row": 97,
+   "cat": "Character",
+   "desc": "[Raider] Damage taken while using Character Skill improves attack power and stamina",
+   "effect": "Increases damage by 1.1x and maximum stamina by 1.2x for 20 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7031800": {
+   "sheet": "Relic Effects",
+   "row": 94,
+   "cat": "Character",
+   "desc": "[Duchess] Become difficult to spot and silence footsteps after landing critical from behind",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7031900": {
+   "sheet": "Relic Effects",
+   "row": 20,
+   "cat": "Exploration",
+   "desc": "Critical Hits Earn Runes",
+   "effect": "Gain 600 runes on critical hits",
+   "stack": "No",
+   "notes": ""
+  },
+  "7032200": {
+   "sheet": "Relic Effects",
+   "row": 26,
+   "cat": "Offensive",
+   "desc": "Taking attacks improves attack power",
+   "effect": "15% damage buff after taking a hit, for 10s. Duration refresh when getting hit again. Does not work if blocked",
+   "stack": "No",
+   "notes": ""
+  },
+  "7032400": {
+   "sheet": "Relic Effects",
+   "row": 80,
+   "cat": "Character",
+   "desc": "[Wylder] Art gauge is greatly filled when ability is activated",
+   "effect": "Increased characterSkillGauge by 18",
+   "stack": "No",
+   "notes": ""
+  },
+  "7032700": {
+   "sheet": "Relic Effects",
+   "row": 92,
+   "cat": "Character",
+   "desc": "[Duchess] Defeating enemies while Art is active ups attack power",
+   "effect": "Increases damage by 1.15x for 30 seconds for each enemy killed while Ultimate is active",
+   "stack": "No",
+   "notes": ""
+  },
+  "7032800": {
+   "sheet": "Relic Effects",
+   "row": 104,
+   "cat": "Character",
+   "desc": "[Recluse] Collecting affinity residue activates Terra Magica",
+   "effect": "Creates a sigil that increases magic damage by 1.15x when standing inside, lasts 30 seconds",
+   "stack": "No",
+   "notes": "Cannot spawn a new terra magica while previous one is still active"
+  },
+  "7032900": {
+   "sheet": "Relic Effects",
+   "row": 105,
+   "cat": "Character",
+   "desc": "[Recluse] Suffer blood loss and increase attack power upon Art activation",
+   "effect": "Ultimate deals [MaxHP * 0.2] damage to the player and increases damage by 1.16x for 30s",
+   "stack": "No",
+   "notes": "Applies on top of the built in ~15% damage increase from her Ultimate art"
+  },
+  "7033200": {
+   "sheet": "Relic Effects",
+   "row": 83,
+   "cat": "Character",
+   "desc": "[Wylder] +1 additional character skill use",
+   "effect": "Self-explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7033400": {
+   "sheet": "Relic Effects",
+   "row": 87,
+   "cat": "Character",
+   "desc": "[Guardian] Successful guards send out shockwaves while ability is active",
+   "effect": "Sends out a shockwave when blocking an attack in the Iron Guard stance. 100 base physical attack",
+   "stack": "No",
+   "notes": ""
+  },
+  "7034100": {
+   "sheet": "Relic Effects",
+   "row": 106,
+   "cat": "Character",
+   "desc": "[Recluse] Activating Ultimate Art raises Max HP",
+   "effect": "Increases maximum HP by 1.5x for 30 seconds. After 30 seconds, buff stays until hit",
+   "stack": "No",
+   "notes": ""
+  },
+  "7034400": {
+   "sheet": "Relic Effects",
+   "row": 107,
+   "cat": "Character",
+   "desc": "[Executor] Character Skill Boosts Attack but Lowers Damage Negation While Attacking",
+   "effect": "Increases damage by 1.35x for 6 seconds and lowers damage negation by 40% for 5 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7034500": {
+   "sheet": "Relic Effects",
+   "row": 108,
+   "cat": "Character",
+   "desc": "[Executor] While Character Skill is active, unlocking use of cursed sword restores HP",
+   "effect": "Restores [MaxHP * 0.05] + 100 HP",
+   "stack": "No",
+   "notes": ""
+  },
+  "7034600": {
+   "sheet": "Relic Effects",
+   "row": 88,
+   "cat": "Character",
+   "desc": "[Ironeye] Art Charge Activation Adds Poison Effect",
+   "effect": "Charged ultimate deals 300 poison buildup",
+   "stack": "No",
+   "notes": ""
+  },
+  "7034700": {
+   "sheet": "Relic Effects",
+   "row": 89,
+   "cat": "Character",
+   "desc": "[Ironeye] Boosts thrusting counterattacks after executing Art",
+   "effect": "Increases counterhit damage by 1.2x for 30 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7035100": {
+   "sheet": "Relic Effects",
+   "row": 65,
+   "cat": "Regen",
+   "desc": "Critical Hit Boosts Stamina Recovery Speed",
+   "effect": "Increases stamina recovery by 10/s for 15 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7035400": {
+   "sheet": "Relic Effects",
+   "row": 66,
+   "cat": "Regen",
+   "desc": "Gesture \"Crossed Legs\" Builds Up Madness",
+   "effect": "Inflicts 10 madness buildup every 2 seconds",
+   "stack": "No",
+   "notes": "Exclusive to (Dark) Night of the Demon"
+  },
+  "7035500": {
+   "sheet": "Relic Effects",
+   "row": 67,
+   "cat": "Regen",
+   "desc": "Madness Continually Recovers FP",
+   "effect": "Recovers 2 FP/s for 25 seconds",
+   "stack": "No",
+   "notes": "Exclusive to (Dark) Night of the Demon"
+  },
+  "7035700": {
+   "sheet": "Relic Effects",
+   "row": 33,
+   "cat": "Offensive",
+   "desc": "Switching Weapons Adds an Affinity Attack",
+   "effect": "Adds 12 magic/fire/lightning/holy AP for 10 seconds",
+   "stack": "No",
+   "notes": "The element that is chosen is random. Exclusive to Night of the Lord."
+  },
+  "7035800": {
+   "sheet": "Relic Effects",
+   "row": 34,
+   "cat": "Offensive",
+   "desc": "Boosts Attack Power of Added Affinity Attacks",
+   "effect": "Increases magic/fire/lightning/holy AP by 1.1x",
+   "stack": "Yes",
+   "notes": "Rounds up. Exclusive to Night of the Lord, Golden Dew, and Dark Night of the Champion. Does not affect sorceries/incants. Works for any elemental damage on weapon, not just weapon buffs"
+  },
+  "7035900": {
+   "sheet": "Relic Effects",
+   "row": 35,
+   "cat": "Offensive",
+   "desc": "Switching Weapons Boosts Attack Power",
+   "effect": "Increases physical damage by 1.1x for 10 seconds",
+   "stack": "No",
+   "notes": "Exclusive to Night of the Lord and Fell Omen Fetish."
+  },
+  "7036000": {
+   "sheet": "Relic Effects",
+   "row": 72,
+   "cat": "Regen",
+   "desc": "FP Restoration upon Successive Attacks",
+   "effect": "Recovers [MaxFP * 0.05] with continuous attacks",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7036100": {
+   "sheet": "Relic Effects",
+   "row": 73,
+   "cat": "Regen",
+   "desc": "HP Recovery From Successful Guarding",
+   "effect": "Recovers 16 HP after blocking an attack",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036200": {
+   "sheet": "Relic Effects",
+   "row": 110,
+   "cat": "Character",
+   "desc": "[Scholar] Prevent slowing of Character Skill",
+   "effect": "Slows the decay rate of the Analyze meter",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036300": {
+   "sheet": "Relic Effects",
+   "row": 111,
+   "cat": "Character",
+   "desc": "[Scholar] Allies targeted by Character Skill gain boosted attack",
+   "effect": "Upon usage of the skill, allies targeted will gain 1.2x (physical) / 1.15x (elemental) damage for 30 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036400": {
+   "sheet": "Relic Effects",
+   "row": 112,
+   "cat": "Character",
+   "desc": "[Scholar] Continuous damage inflicted on targets threaded by Ultimate Art",
+   "effect": "Enemies affected by the ultimate takes 15 dps for 20 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036500": {
+   "sheet": "Relic Effects",
+   "row": 113,
+   "cat": "Character",
+   "desc": "[Scholar] Earn runes for each additional specimen acquired with Character Skill",
+   "effect": "Gain 1300 runes when analyzing a new enemy type (works like a bestiary). Scanning the same enemy type at a different location will not provide the runes. (needs additional confirmation)",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036800": {
+   "sheet": "Relic Effects",
+   "row": 114,
+   "cat": "Character",
+   "desc": "[Undertaker] Activating Ultimate Art increases attack power",
+   "effect": "Increases damage by 1.18x for 40 seconds after activating ultimate",
+   "stack": "No",
+   "notes": ""
+  },
+  "7036900": {
+   "sheet": "Relic Effects",
+   "row": 115,
+   "cat": "Character",
+   "desc": "[Undertaker] Attack power increases by landing the final blow of a chain attack",
+   "effect": "Increases damage by 1.16x for 20 seconds after hitting final hit of R1/L1 chain",
+   "stack": "",
+   "notes": ""
+  },
+  "7037000": {
+   "sheet": "Relic Effects",
+   "row": 116,
+   "cat": "Character",
+   "desc": "[Undertaker] Physical attacks boosted while assist effect from incantation is active for self",
+   "effect": "Increases physical damage by 1.19x for 60 seconds after applying an incant buff",
+   "stack": "",
+   "notes": ""
+  },
+  "7037300": {
+   "sheet": "Relic Effects",
+   "row": 117,
+   "cat": "Character",
+   "desc": "[Undertaker] Contact with allies restores their HP while Ultimate Art is activated",
+   "effect": "Allies restore 30% of max HP + 100 HP if they make contact with the ultimate",
+   "stack": "",
+   "notes": ""
+  },
+  "7037700": {
+   "sheet": "Relic Effects",
+   "row": 50,
+   "cat": "Offensive",
+   "desc": "Status Ailment Gauges Slowly Increase Attack Power",
+   "effect": "Having any amount of status ailment gauge increases damage by 1.04x every 20 seconds (10 stacks). Resets after 20s of no status gauge.",
+   "stack": "N/A",
+   "notes": "Exclusive to Night of Dregs. Buff checks status gauge at fixed 20s intervals: at each 20s mark, if a status gauge is present, it grants an additional buff stack; if guage is not present, all stacks are lost. This means buff can expire <20s after depletion of status gauge."
+  },
+  "7037800": {
+   "sheet": "Relic Effects",
+   "row": 57,
+   "cat": "Defensive",
+   "desc": "Occasionally Nullify Attacks When Damage Negation is Lowered",
+   "effect": "Self explanatory. Chance of activation currently unknown",
+   "stack": "No",
+   "notes": "Exclusive to the Will of Balance (ED Balancer relic, unreleased)"
+  },
+  "7040000": {
+   "sheet": "Relic Effects",
+   "row": 38,
+   "cat": "Offensive",
+   "desc": "Improved Initial Standard Attack",
+   "effect": "Increases the damage of the first light attack by 1.15x",
+   "stack": "Yes",
+   "notes": "Applies to 1H/2H R1 chain or paired weapon L1. Does not work for shield poke / rolling attack / jump attack"
+  },
+  "7040100": {
+   "sheet": "Relic Effects",
+   "row": 39,
+   "cat": "Offensive",
+   "desc": "Improved Guard Counters",
+   "effect": "Increases guard counter damage by 1.17x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7040200": {
+   "sheet": "Relic Effects",
+   "row": 41,
+   "cat": "Offensive",
+   "desc": "Improved Critical Hits +0/1",
+   "effect": "Increases critical hit damage by 1.18x/1.23x",
+   "stack": "See Notes",
+   "notes": "Only applies to certain parts of critical hit. E.g. on colossal weapon, it only buffs the (stronger) second hit. +0 stack with +1 and +0 can stack with another +0 but +1 can not stack with itself as +1 exclusive to (Dark) Night of the Baron"
+  },
+  "7040201": {
+   "sheet": "Relic Effects",
+   "row": 41,
+   "cat": "Offensive",
+   "desc": "Improved Critical Hits +0/1",
+   "effect": "Increases critical hit damage by 1.18x/1.23x",
+   "stack": "See Notes",
+   "notes": "Only applies to certain parts of critical hit. E.g. on colossal weapon, it only buffs the (stronger) second hit. +0 stack with +1 and +0 can stack with another +0 but +1 can not stack with itself as +1 exclusive to (Dark) Night of the Baron"
+  },
+  "7040300": {
+   "sheet": "Relic Effects",
+   "row": 42,
+   "cat": "Offensive",
+   "desc": "Improved Throwing Pot/Knife/Stone/Perfuming Arts Damage",
+   "effect": "Increases pot/knife/stone/Perfuming Arts damage by 1.15x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7040400": {
+   "sheet": "Relic Effects",
+   "row": 42,
+   "cat": "Offensive",
+   "desc": "Improved Throwing Pot/Knife/Stone/Perfuming Arts Damage",
+   "effect": "Increases pot/knife/stone/Perfuming Arts damage by 1.15x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7040500": {
+   "sheet": "Relic Effects",
+   "row": 42,
+   "cat": "Offensive",
+   "desc": "Improved Throwing Pot/Knife/Stone/Perfuming Arts Damage",
+   "effect": "Increases pot/knife/stone/Perfuming Arts damage by 1.15x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043000": {
+   "sheet": "Relic Effects",
+   "row": 44,
+   "cat": "Offensive",
+   "desc": "Improves Roar and Breath attacks",
+   "effect": "Increases roar / breath damage by 1.15x.",
+   "stack": "Yes",
+   "notes": "Does not work for Raider character skill."
+  },
+  "7043100": {
+   "sheet": "Relic Effects",
+   "row": 42,
+   "cat": "Offensive",
+   "desc": "Improved Throwing Pot/Knife/Stone/Perfuming Arts Damage",
+   "effect": "Increases pot/knife/stone/Perfuming Arts damage by 1.15x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043200": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043300": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043400": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043500": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043600": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043700": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7043800": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044000": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044100": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044200": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044300": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044400": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044500": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7044600": {
+   "sheet": "Relic Effects",
+   "row": 43,
+   "cat": "Offensive",
+   "desc": "Improved [Spell School] Sorcery/Incantation",
+   "effect": "Increases damage of specified school by 1.12x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7050000": {
+   "sheet": "Relic Effects",
+   "row": 71,
+   "cat": "Regen",
+   "desc": "Raised stamina recovery for nearby allies, but not for self",
+   "effect": "Increases allies' stamina recovery speed by 4/s",
+   "stack": "",
+   "notes": ""
+  },
+  "7050100": {
+   "sheet": "Relic Effects",
+   "row": 18,
+   "cat": "Exploration",
+   "desc": "Item confer effect to all nearby allies",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7060000": {
+   "sheet": "Relic Effects",
+   "row": 21,
+   "cat": "Exploration",
+   "desc": "Attack power permanently increased for each evergaol prisoner defeated",
+   "effect": "Increases damage by 1.05x per Evergaol boss",
+   "stack": "No",
+   "notes": ""
+  },
+  "7060100": {
+   "sheet": "Relic Effects",
+   "row": 22,
+   "cat": "Exploration",
+   "desc": "Max FP increased for each Sorcerer's Rise unlocked",
+   "effect": "Increases max FP by 1.18x for each Sorcerer's Rise unlocked",
+   "stack": "No",
+   "notes": ""
+  },
+  "7060200": {
+   "sheet": "Relic Effects",
+   "row": 23,
+   "cat": "Exploration",
+   "desc": "Attack power up after defeating a Night Invader",
+   "effect": "Increases damage by 1.07x per invader",
+   "stack": "No",
+   "notes": ""
+  },
+  "7070000": {
+   "sheet": "Relic Effects",
+   "row": 25,
+   "cat": "Exploration",
+   "desc": "Treasure marked upon map",
+   "effect": "Reveals hidden chest locations",
+   "stack": "No",
+   "notes": ""
+  },
+  "7080000": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080100": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080300": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080400": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080500": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080600": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080700": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080800": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7080900": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081000": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081100": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081200": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081300": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081500": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081700": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081800": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081900": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082000": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082200": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082300": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082400": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082500": {
+   "sheet": "Relic Effects",
+   "row": 9,
+   "cat": "Stat",
+   "desc": "Max FP Up with 3+ Staves/Sacred Seals Equipped",
+   "effect": "Increases mind by 10",
+   "stack": "No",
+   "notes": "+50 Max FP"
+  },
+  "7082600": {
+   "sheet": "Relic Effects",
+   "row": 9,
+   "cat": "Stat",
+   "desc": "Max FP Up with 3+ Staves/Sacred Seals Equipped",
+   "effect": "Increases mind by 10",
+   "stack": "No",
+   "notes": "+50 Max FP"
+  },
+  "7082700": {
+   "sheet": "Relic Effects",
+   "row": 10,
+   "cat": "Stat",
+   "desc": "Max HP Up with 3+ Small/Medium/Greatshields Equipped",
+   "effect": "Increases vigor by 10",
+   "stack": "No",
+   "notes": "+200 Max HP"
+  },
+  "7082800": {
+   "sheet": "Relic Effects",
+   "row": 10,
+   "cat": "Stat",
+   "desc": "Max HP Up with 3+ Small/Medium/Greatshields Equipped",
+   "effect": "Increases vigor by 10",
+   "stack": "No",
+   "notes": "+200 Max HP"
+  },
+  "7082900": {
+   "sheet": "Relic Effects",
+   "row": 10,
+   "cat": "Stat",
+   "desc": "Max HP Up with 3+ Small/Medium/Greatshields Equipped",
+   "effect": "Increases vigor by 10",
+   "stack": "No",
+   "notes": "+200 Max HP"
+  },
+  "7090000": {
+   "sheet": "Relic Effects",
+   "row": 74,
+   "cat": "Regen",
+   "desc": "Defeating enemies fills more of the Art gauge",
+   "effect": "Increases Ultimate Art Gauge by 5 on each enemy kill",
+   "stack": "No",
+   "notes": ""
+  },
+  "7090100": {
+   "sheet": "Relic Effects",
+   "row": 75,
+   "cat": "Regen",
+   "desc": "Defeating enemies restores HP for allies but not for self",
+   "effect": "Allies recover 20 HP on each enemy kill",
+   "stack": "",
+   "notes": ""
+  },
+  "7090300": {
+   "sheet": "Relic Effects",
+   "row": 98,
+   "cat": "Character",
+   "desc": "Defeating enemies near Totem Stela restores HP",
+   "effect": "Restores [MaxHP * 0.5] on each enemy kill in the vicinity of Raider's ultimate",
+   "stack": "No",
+   "notes": ""
+  },
+  "7100100": {
+   "sheet": "Relic Effects",
+   "row": 76,
+   "cat": "Regen",
+   "desc": "Stamina Recovery upon Landing Attacks +0/+1",
+   "effect": "Restores 2/3 stamina with continuous attacks",
+   "stack": "No",
+   "notes": "Stack with the weaker version. +1 Exclusive to (Dark) Night of the Beast"
+  },
+  "7100110": {
+   "sheet": "Relic Effects",
+   "row": 76,
+   "cat": "Regen",
+   "desc": "Stamina Recovery upon Landing Attacks +0/+1",
+   "effect": "Restores 2/3 stamina with continuous attacks",
+   "stack": "No",
+   "notes": "Stack with the weaker version. +1 Exclusive to (Dark) Night of the Beast"
+  },
+  "7110000": {
+   "sheet": "Relic Effects",
+   "row": 19,
+   "cat": "Exploration",
+   "desc": "Increase rune acquisition for self and allies",
+   "effect": "1.035x rune gain for self and allies",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7120000": {
+   "sheet": "Relic Effects",
+   "row": 11,
+   "cat": "Start of game",
+   "desc": "Starting Weapon deals [element] Damage",
+   "effect": "Decreases starting weapon's physical AP by 30/40/50/60 and adds 33/44/55/66 elemental AP",
+   "stack": "No",
+   "notes": "The amount of damage taken away and added depends on weapon type. Does not affect weapon scaling. Does not stack with \"Stating armament inflicts \"x\" status\""
+  },
+  "7120100": {
+   "sheet": "Relic Effects",
+   "row": 11,
+   "cat": "Start of game",
+   "desc": "Starting Weapon deals [element] Damage",
+   "effect": "Decreases starting weapon's physical AP by 30/40/50/60 and adds 33/44/55/66 elemental AP",
+   "stack": "No",
+   "notes": "The amount of damage taken away and added depends on weapon type. Does not affect weapon scaling. Does not stack with \"Stating armament inflicts \"x\" status\""
+  },
+  "7120200": {
+   "sheet": "Relic Effects",
+   "row": 11,
+   "cat": "Start of game",
+   "desc": "Starting Weapon deals [element] Damage",
+   "effect": "Decreases starting weapon's physical AP by 30/40/50/60 and adds 33/44/55/66 elemental AP",
+   "stack": "No",
+   "notes": "The amount of damage taken away and added depends on weapon type. Does not affect weapon scaling. Does not stack with \"Stating armament inflicts \"x\" status\""
+  },
+  "7120300": {
+   "sheet": "Relic Effects",
+   "row": 11,
+   "cat": "Start of game",
+   "desc": "Starting Weapon deals [element] Damage",
+   "effect": "Decreases starting weapon's physical AP by 30/40/50/60 and adds 33/44/55/66 elemental AP",
+   "stack": "No",
+   "notes": "The amount of damage taken away and added depends on weapon type. Does not affect weapon scaling. Does not stack with \"Stating armament inflicts \"x\" status\""
+  },
+  "7120400": {
+   "sheet": "Relic Effects",
+   "row": 12,
+   "cat": "Start of game",
+   "desc": "Stating armament inflicts \"x\" status",
+   "effect": "Decreases starting weapon's damage by 0.85x and adds 25 (blood) or 35 (poison/frost) buildup",
+   "stack": "No",
+   "notes": "Does not stack with \"Starting Weapon deals [element] Damage\""
+  },
+  "7120500": {
+   "sheet": "Relic Effects",
+   "row": 12,
+   "cat": "Start of game",
+   "desc": "Stating armament inflicts \"x\" status",
+   "effect": "Decreases starting weapon's damage by 0.85x and adds 25 (blood) or 35 (poison/frost) buildup",
+   "stack": "No",
+   "notes": "Does not stack with \"Starting Weapon deals [element] Damage\""
+  },
+  "7120600": {
+   "sheet": "Relic Effects",
+   "row": 12,
+   "cat": "Start of game",
+   "desc": "Stating armament inflicts \"x\" status",
+   "effect": "Decreases starting weapon's damage by 0.85x and adds 25 (blood) or 35 (poison/frost) buildup",
+   "stack": "No",
+   "notes": "Does not stack with \"Starting Weapon deals [element] Damage\""
+  },
+  "7120900": {
+   "sheet": "Relic Effects",
+   "row": 16,
+   "cat": "Start of game",
+   "desc": "Stonesword in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7121000": {
+   "sheet": "Relic Effects",
+   "row": 15,
+   "cat": "Start of game",
+   "desc": "Small pouch in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121300": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121400": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121500": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121600": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121700": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121800": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7121900": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122100": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122300": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122400": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122500": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122600": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7122700": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7122800": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7122900": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123000": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123100": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123200": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123300": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123400": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123500": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123600": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123700": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123800": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7123900": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124000": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124100": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124300": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124400": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124500": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124600": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7124700": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7126000": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7150000": {
+   "sheet": "Relic Effects",
+   "row": 40,
+   "cat": "Offensive",
+   "desc": "Guard counter is given a boost based on current HP",
+   "effect": "Damage boost varies with HP remaining, and affected by hp boosts.",
+   "stack": "No",
+   "notes": "Add a flat damage = hp/20 to each guard counter hit. benefit from buffs and other damage bonuses"
+  },
+  "7160000": {
+   "sheet": "Relic Effects",
+   "row": 79,
+   "cat": "Regen",
+   "desc": "HP Restoration upon Thrusting Counterattack",
+   "effect": "Restores [MaxHP * 0.025] HP on counterhits",
+   "stack": "No",
+   "notes": ""
+  },
+  "7170100": {
+   "sheet": "Relic Effects",
+   "row": 51,
+   "cat": "Offensive",
+   "desc": "Attacks Inflict Rot When Damage Is Taken",
+   "effect": "Adds 25 rot buildup to the weapon for 12 seconds after taking damage",
+   "stack": "N/A",
+   "notes": "Exclusive to Night of Dregs"
+  },
+  "7220000": {
+   "sheet": "Relic Effects",
+   "row": 103,
+   "cat": "Character",
+   "desc": "[Revenant] Power up while fighting alongside family",
+   "effect": "Helen provides 1 HP/s, Frederick provides 1.1x damage, and Sebastian provides 20% elemental damage negation",
+   "stack": "No",
+   "notes": ""
+  },
+  "7230000": {
+   "sheet": "Relic Effects",
+   "row": 24,
+   "cat": "Exploration",
+   "desc": "(Huge) Rune discount for shop purchases while on expedition",
+   "effect": "Provides a 10/20% discount at merchants",
+   "stack": "No",
+   "notes": "Different versions stack together. The same version does not stack with itself. \"Huge\" exclusive to Night of the Demon"
+  },
+  "7230001": {
+   "sheet": "Relic Effects",
+   "row": 24,
+   "cat": "Exploration",
+   "desc": "(Huge) Rune discount for shop purchases while on expedition",
+   "effect": "Provides a 10/20% discount at merchants",
+   "stack": "No",
+   "notes": "Different versions stack together. The same version does not stack with itself. \"Huge\" exclusive to Night of the Demon"
+  },
+  "7240000": {
+   "sheet": "Relic Effects",
+   "row": 56,
+   "cat": "Defensive",
+   "desc": "Improved Poise & Damage Negation When Knocked Back by Damage",
+   "effect": "Increases damage negation by 20% and reduces incoming poise damage by 0.8x for 20 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7260000": {
+   "sheet": "Relic Effects",
+   "row": 47,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing frostbite/poison/rot afflicted enemy",
+   "effect": "Increases damage by 1.1x towards targets suffering specified status effect",
+   "stack": "No",
+   "notes": ""
+  },
+  "7260300": {
+   "sheet": "Relic Effects",
+   "row": 47,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing frostbite/poison/rot afflicted enemy",
+   "effect": "Increases damage by 1.1x towards targets suffering specified status effect",
+   "stack": "No",
+   "notes": ""
+  },
+  "7260400": {
+   "sheet": "Relic Effects",
+   "row": 47,
+   "cat": "Offensive",
+   "desc": "Attack power up when facing frostbite/poison/rot afflicted enemy",
+   "effect": "Increases damage by 1.1x towards targets suffering specified status effect",
+   "stack": "No",
+   "notes": ""
+  },
+  "7260700": {
+   "sheet": "Relic Effects",
+   "row": 48,
+   "cat": "Offensive",
+   "desc": "Frostbite in Vicinity Conceals Self",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": "Exclusive to (Dark) Night of the Miasma"
+  },
+  "7260800": {
+   "sheet": "Relic Effects",
+   "row": 49,
+   "cat": "Offensive",
+   "desc": "Poison & Rot in Vicinity Increases Attack Power",
+   "effect": "Increases damage by 1.12x for 20 seconds when poison or rot is triggered in the vicinity",
+   "stack": "No",
+   "notes": "Exclusive to Night of the Wise"
+  },
+  "7260900": {
+   "sheet": "Relic Effects",
+   "row": 70,
+   "cat": "Regen",
+   "desc": "Rot in Vicinity Causes Continuous HP Recovery",
+   "effect": "Recovers 0.15% of max HP + 15 HP/s for 15 seconds after rot procs",
+   "stack": "N/A",
+   "notes": "Exclusive to Night of Dregs"
+  },
+  "7270100": {
+   "sheet": "Relic Effects",
+   "row": 91,
+   "cat": "Character",
+   "desc": "[Ironeye] +1 additional character skill use",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7280000": {
+   "sheet": "Relic Effects",
+   "row": 90,
+   "cat": "Character",
+   "desc": "[Ironeye] Extends duration of weak point",
+   "effect": "Extends weak point duration from 17.5s to 22s",
+   "stack": "No",
+   "notes": ""
+  },
+  "7290000": {
+   "sheet": "Relic Effects",
+   "row": 93,
+   "cat": "Character",
+   "desc": "[Duchess] Improved Character Skill Attack Power",
+   "effect": "Duchess' Restage does 60% of total damage instead of 50%",
+   "stack": "No",
+   "notes": "In game testing suggest 20% damage increase"
+  },
+  "7310000": {
+   "sheet": "Relic Effects",
+   "row": 96,
+   "cat": "Character",
+   "desc": "[Raider] Duration of Ultimate Art extended",
+   "effect": "Increases duration of the ultimate from 20 to 30 seconds",
+   "stack": "No",
+   "notes": ""
+  },
+  "7330000": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330100": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330200": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330300": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330400": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330500": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330600": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330700": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330800": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7330900": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331000": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331200": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331300": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331400": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331500": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331700": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331800": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7331900": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7332000": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7332100": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7332200": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7332300": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7332400": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7340000": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340100": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340200": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340300": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340400": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340500": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340600": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340700": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340800": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7340900": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341000": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341100": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341200": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341300": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341400": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341500": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341700": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341800": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7341900": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7342000": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7342100": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7342200": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7342300": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7342400": {
+   "sheet": "Relic Effects",
+   "row": 77,
+   "cat": "Regen",
+   "desc": "HP restoration after [Weapon type] attacks",
+   "effect": "Restores 15 HP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350000": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350100": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350200": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350300": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350400": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350500": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350600": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350800": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7350900": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351000": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351100": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351200": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351300": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351400": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351500": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351700": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351800": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7351900": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7352000": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7352100": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7352200": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7352300": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7352400": {
+   "sheet": "Relic Effects",
+   "row": 78,
+   "cat": "Regen",
+   "desc": "FP restoration after [Weapon type] attacks",
+   "effect": "Restores 2 FP with continuous attacks",
+   "stack": "No",
+   "notes": "Amount of healing doesn't seem to change based on attack / weapon type."
+  },
+  "7360600": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7360900": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7361200": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7361300": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7362100": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7370300": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7370400": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7370600": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7370900": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  },
+  "7371500": {
+   "sheet": "Relic Effects",
+   "row": 13,
+   "cat": "Start of game",
+   "desc": "Change compatible armament skill to [xxx] at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "No",
+   "notes": ""
+  }
+ },
+ "curses": {
+  "6820000": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820100": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820200": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820300": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820400": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820500": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6820600": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6830000": {
+   "sheet": "Deep Relic Effects",
+   "row": 63,
+   "cat": "Curse",
+   "desc": "Reduced Strength and Intelligence",
+   "effect": "Decreases strength and intelligence by 3",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6830100": {
+   "sheet": "Deep Relic Effects",
+   "row": 64,
+   "cat": "Curse",
+   "desc": "Reduced Dexterity and Faith",
+   "effect": "Decreases dexterity and faith by 3",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6830200": {
+   "sheet": "Deep Relic Effects",
+   "row": 65,
+   "cat": "Curse",
+   "desc": "Reduced Dexterity and Intelligence",
+   "effect": "Decreases dexterity and intelligence by 3",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6830300": {
+   "sheet": "Deep Relic Effects",
+   "row": 66,
+   "cat": "Curse",
+   "desc": "Reduced Strength and Faith",
+   "effect": "Decreases strength and faith by 3",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6830400": {
+   "sheet": "Deep Relic Effects",
+   "row": 67,
+   "cat": "Curse",
+   "desc": "Reduced Vigor and Arcane",
+   "effect": "Decreases vigor and arcane by 3",
+   "stack": "Yes",
+   "notes": "-60 HP"
+  },
+  "6840000": {
+   "sheet": "Deep Relic Effects",
+   "row": 68,
+   "cat": "Curse",
+   "desc": "Reduced Rune Acquisition",
+   "effect": "Decreases rune gain by 0.9x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6840100": {
+   "sheet": "Deep Relic Effects",
+   "row": 69,
+   "cat": "Curse",
+   "desc": "Reduced Flask HP Restoration",
+   "effect": "Reduces HP gained from flasks by 0.85x",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6840200": {
+   "sheet": "Deep Relic Effects",
+   "row": 70,
+   "cat": "Curse",
+   "desc": "Ultimate Art Charging Impaired",
+   "effect": "Decreases ultimate gauge gain by 0.85x",
+   "stack": "Yes",
+   "notes": "Unlike Ultimate Art Gauge, affects both passive ult gain and ult gain from attacking"
+  },
+  "6850200": {
+   "sheet": "Deep Relic Effects",
+   "row": 71,
+   "cat": "Curse",
+   "desc": "All Resistances Down",
+   "effect": "Decreases all status resist by 80",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6850500": {
+   "sheet": "Deep Relic Effects",
+   "row": 72,
+   "cat": "Curse",
+   "desc": "Continuous HP Loss",
+   "effect": "Decreases HP by 2/s",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6850700": {
+   "sheet": "Deep Relic Effects",
+   "row": 73,
+   "cat": "Curse",
+   "desc": "More Damage Taken After Evasion",
+   "effect": "Decreases damage negations by 45% right after rolling",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6850800": {
+   "sheet": "Deep Relic Effects",
+   "row": 74,
+   "cat": "Curse",
+   "desc": "Repeated Evasions Lower Damage Negation",
+   "effect": "Decreases damage negations by 23% / 35% for 15 seconds on repeat rolls",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6850900": {
+   "sheet": "Deep Relic Effects",
+   "row": 75,
+   "cat": "Curse",
+   "desc": "Reduced Damage Negation for Flask Usages",
+   "effect": "Decreases damage negations by 45% while using flasks",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6851200": {
+   "sheet": "Deep Relic Effects",
+   "row": 76,
+   "cat": "Curse",
+   "desc": "Lower Attack When Below Max HP",
+   "effect": "Decreases damage by 0.915x when HP is below 85%",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6851300": {
+   "sheet": "Deep Relic Effects",
+   "row": 77,
+   "cat": "Curse",
+   "desc": "Poison Buildup When Below Max HP",
+   "effect": "Inflicts the user with 2 poison buildup per 0.22s when HP is below 85%",
+   "stack": "Yes",
+   "notes": "Does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6851400": {
+   "sheet": "Deep Relic Effects",
+   "row": 78,
+   "cat": "Curse",
+   "desc": "Rot Buildup When Below Max HP",
+   "effect": "Inflicts the user with 2 rot buildup per 0.24s when HP is below 85%",
+   "stack": "Yes",
+   "notes": "Does not trigger executor ability Tenacity until the status is recovered"
+  },
+  "6851700": {
+   "sheet": "Deep Relic Effects",
+   "row": 79,
+   "cat": "Curse",
+   "desc": "Near Death Reduces Max HP",
+   "effect": "Reduces maximum HP by 0.75x for 60 seconds after being downed",
+   "stack": "Yes",
+   "notes": ""
+  }
+ }
+}

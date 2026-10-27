@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+
+# your data: saves and relic-editor exports
+*.sl2
+*.co2
+all_relics_exported_*.xlsx
+
+# third-party source spreadsheets (download to rebuild reference/*.json)
+reference/useful_info.xlsx
+reference/ap_calculator.xlsx
+reference/match_review.txt

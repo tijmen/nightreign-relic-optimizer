@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relic Weights</title>
+<style>
+:root {
+  --bg: #f6f5f2; --panel: #ffffff; --ink: #1d1d1f; --muted: #6b6b70; --line: #e3e1dc; --hover: #f1efe9;
+  --pos: #1f7a4d; --pos-bg: #e3f3ea; --neg: #b3261e; --neg-bg: #fbe6e4; --zero: #8a8a90; --zero-bg: #efefef;
+  --accent: #3b5bdb; --mod: #fff4cc; --flash: #ffe58a;
+  --R: #c0392b; --G: #2e8b57; --B: #2f6fb5; --Y: #c9a227;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416; --panel: #1c1c1f; --ink: #ececef; --muted: #9a9aa2; --line: #2e2e33; --hover: #25252a;
+    --pos: #5fd39a; --pos-bg: #173628; --neg: #ff8a80; --neg-bg: #3d1c1a; --zero: #8a8a90; --zero-bg: #2a2a2e;
+    --accent: #8ea6ff; --mod: #3a3420; --flash: #5c4f12;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { display: flex; align-items: center; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 5; flex-wrap: wrap; }
+header h1 { font-size: 16px; margin: 0; }
+header .meta { color: var(--muted); font-size: 12px; }
+header select#char { font-weight: 600; }
+header .spacer { flex: 1; }
+button { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 6px; padding: 5px 12px; cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button:disabled { opacity: .45; cursor: default; }
+#status { font-size: 12px; color: var(--muted); min-width: 120px; text-align: right; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 16px; padding: 16px; align-items: start; }
+@media (max-width: 1000px) { main { grid-template-columns: 1fr; } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+#left .toolbar { display: flex; gap: 8px; padding: 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; align-items: center; position: sticky; top: 53px; background: var(--panel); z-index: 3; border-radius: 10px 10px 0 0; }
+input[type=search], select, input[type=number] { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
+input[type=search] { flex: 1; min-width: 160px; }
+label.chk { display: inline-flex; gap: 4px; align-items: center; font-size: 13px; color: var(--muted); white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; }
+td { padding: 3px 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+tr.cat td { background: var(--bg); color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; padding-top: 10px; font-weight: 600; }
+tr.row:hover td { background: var(--hover); }
+tr.row.mod td { background: var(--mod); }
+tr.row.flash td { background: var(--flash); transition: background 0s; }
+tr.row td { transition: background .8s; }
+td.w { width: 84px; }
+td.w input { width: 72px; text-align: right; }
+td.w input.pos { color: var(--pos); } td.w input.neg { color: var(--neg); }
+td.inv { width: 80px; color: var(--muted); font-size: 12px; white-space: nowrap; text-align: right; }
+td.stk { width: 64px; font-size: 12px; color: var(--muted); }
+td.name small { color: var(--muted); }
+td.name .ref { color: var(--muted); font-size: 11.5px; line-height: 1.3; margin-top: 1px; }
+td.name .ref b { font-weight: 600; }
+td.w .dv { display: inline-block; width: 72px; text-align: right; padding: 4px 9px; font-variant-numeric: tabular-nums; }
+td.w .dv.pos { color: var(--pos); } td.w .dv.neg { color: var(--neg); }
+td.name .ref.rule { color: var(--accent); }
+.tag { font-size: 10.5px; font-weight: 600; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+.dm { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; width: 100%; padding-top: 8px; border-top: 1px dashed var(--line); }
+.dm b { font-size: 13px; }
+.dm input[type=text] { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; width: 150px; }
+.dm select { max-width: 190px; }
+.flag { font-size: 11px; font-weight: 600; color: var(--neg); background: var(--neg-bg); border-radius: 4px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+.hidden { display: none; }
+#right { position: sticky; top: 69px; max-height: calc(100vh - 85px); overflow: auto; padding: 12px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+.seg button { border: 0; border-radius: 0; padding: 4px 10px; }
+.seg button.on { background: var(--accent); color: #fff; }
+.vessels { display: flex; flex-wrap: wrap; gap: 6px; }
+.vessels label { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; cursor: pointer; display: inline-flex; gap: 5px; align-items: center; }
+.vessels label.off { opacity: .45; text-decoration: line-through; }
+.vessels input { display: none; }
+.card { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+.card h2 { margin: 0; font-size: 15px; padding: 8px 12px; background: var(--bg); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.card h2 .score { font-variant-numeric: tabular-nums; font-weight: 700; }
+.card h2 .also { font-weight: 400; color: var(--muted); font-size: 12px; }
+.dots { display: inline-flex; gap: 3px; align-items: center; }
+.dot { width: 12px; height: 12px; border-radius: 3px; display: inline-block; border: 1px solid transparent; }
+.dot.R { background: var(--R); } .dot.G { background: var(--G); } .dot.B { background: var(--B); } .dot.Y { background: var(--Y); }
+.dot.W { background: transparent; border-color: var(--muted); }
+.sep { width: 1px; height: 12px; background: var(--muted); margin: 0 3px; }
+.slot { display: grid; grid-template-columns: 44px 1fr; gap: 8px; padding: 7px 12px; border-top: 1px solid var(--line); }
+.slot .lab { font-size: 12px; font-weight: 600; display: flex; gap: 5px; align-items: flex-start; padding-top: 1px; }
+.slot .rel { font-weight: 600; }
+.slot .rel small { font-weight: 400; color: var(--muted); }
+.slot.changed { box-shadow: inset 3px 0 0 var(--accent); }
+.eff { display: flex; gap: 6px; align-items: baseline; font-size: 13px; cursor: pointer; padding: 1px 0; }
+.eff:hover .n { text-decoration: underline; }
+.eff.curse { padding-left: 16px; }
+.b { font-variant-numeric: tabular-nums; font-size: 11px; font-weight: 600; border-radius: 4px; padding: 0 5px; min-width: 34px; text-align: center; flex: none; }
+.b.pos { color: var(--pos); background: var(--pos-bg); } .b.neg { color: var(--neg); background: var(--neg-bg); } .b.zero { color: var(--zero); background: var(--zero-bg); }
+.eff .note { color: var(--muted); font-size: 11px; }
+.eff.curse .n { color: var(--neg); }
+.err { color: var(--neg); white-space: pre-wrap; }
+.empty { color: var(--muted); padding: 20px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Relic Weights</h1>
+  <select id="char" title="Nightfarer: each has its own prefs/<name>.toml"></select>
+  <span class="meta" id="meta"></span>
+  <span class="spacer"></span>
+  <span id="status"></span>
+  <button id="revert" disabled title="Discard unsaved edits">Revert</button>
+  <button id="save" class="primary" disabled>Save</button>
+</header>
+<main>
+  <section id="left" class="panel">
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Filter by name or ID…" autocomplete="off">
+      <select id="kind">
+        <option value="">All</option><option value="eff">Effects</option><option value="curse">Curses</option><option value="derived">Derived</option>
+      </select>
+      <label class="chk"><input type="checkbox" id="nonzero"> Nonzero</label>
+      <label class="chk"><input type="checkbox" id="modonly"> Edited</label>
+    </div>
+    <table><tbody id="tbody"></tbody></table>
+  </section>
+  <section id="right" class="panel">
+    <div class="controls">
+      <div class="seg" id="exp" title="Deep of Night: 3 normal + 3 deep slots. Normal: 3 normal slots, no deep relics">
+        <button data-x="don">Deep of Night</button><button data-x="normal">Normal</button>
+      </div>
+      <div class="seg" id="mode">
+        <button data-m="overall" class="on">Top overall</button><button data-m="per_vessel">Best per vessel</button>
+      </div>
+      <label class="chk">Show <select id="n"><option>3</option><option>5</option><option>8</option></select></label>
+      <label class="chk">Per-curse penalty <input type="number" id="ccp" step="0.5" style="width:64px"></label>
+      <div class="vessels" id="vessels"></div>
+      <div class="dm" title="Physical Attack Up, Improved Melee Attack Power, Strength +n and Strength curses are computed from this">
+        <b>Damage model</b>
+        <label class="chk">Points per 1% damage <input type="number" id="dm-ppp" step="0.1" style="width:64px"></label>
+        <label class="chk">Weapon <select id="dm-weapon"></select></label>
+        <label class="chk" title="0 = always one-handed, 1 = always two-handed">2H share <input type="number" id="dm-two" min="0" max="1" step="0.1" style="width:60px"></label>
+        <label class="chk" title="Character level: weight, e.g. boss fights around 9, 13 and 15">Levels <input type="text" id="dm-levels"></label>
+      </div>
+    </div>
+    <div id="results"><div class="empty">Loading…</div></div>
+  </section>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+let S = null, orig = null, mode = "overall", seq = 0, timer = null, prevTop = null, expedition = null;
+const store = { get: k => { try { return localStorage.getItem(k); } catch { return null; } },
+                set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
+const key = e => (e.kind === "curse" ? "c" : "e") + e.id;
+const cls = w => w > 0 ? "pos" : w < 0 ? "neg" : "zero";
+const fmt = w => (w > 0 ? "+" : "") + (+w.toFixed(2));
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function load(character) {
+  S = await (await fetch("/api/state?character=" + encodeURIComponent(character || store.get("character") || ""))).json();
+  orig = JSON.parse(JSON.stringify(S)); prevTop = null;
+  store.set("character", S.character);
+  expedition = expedition || store.get("expedition") || S.mode;
+  $("#char").innerHTML = S.characters.map(c => `<option ${c === S.character ? "selected" : ""}>${esc(c)}</option>`).join("");
+  $("#save").textContent = `Save to ${S.prefs}`;
+  showExp();
+  $("#meta").textContent = `${S.export} (${S.relic_count} relics) · ${S.prefs}` + (S.unknown ? ` · ⚠ ${S.unknown} IDs not in prefs (run --sync)` : "");
+  $("#ccp").value = S.curse_count_penalty;
+  $("#dm-weapon").innerHTML = S.weapons.map(w => `<option>${esc(w)}</option>`).join("");
+  fillModel(); render(); renderVessels(); solve();
+}
+function fillModel() {
+  const m = S.damage_model;
+  $("#dm-ppp").value = m.points_per_pct_damage; $("#dm-weapon").value = m.weapon; $("#dm-two").value = m.two_handed;
+  $("#dm-levels").value = Object.entries(m.level_weights).map(([l, w]) => `${l}:${w}`).join(", ");
+}
+
+function render() {
+  const rows = [];
+  const section = (title, list) => {
+    let cat = null;
+    for (const [i, e] of list) {
+      const c = `${title}${e.cat ? " · " + e.cat : ""}`;
+      if (c !== cat) { rows.push(`<tr class="cat" data-cat="${esc(c)}"><td colspan="4">${esc(c)}</td></tr>`); cat = c; }
+      const stk = e.kind === "curse" ? `<span title="Curses always stack">stacks</span>`
+        : `<label class="chk" title="Checked: every copy counts. Unchecked: counts once."><input type="checkbox" data-i="${i}" class="stk" ${e.kind === "stack" ? "checked" : ""}> stacks</label>`;
+      const wcell = e.derived ? `<span class="dv ${cls(e.w)}" id="dv-${key(e)}" title="Computed from game rules; not editable">${(+e.w.toFixed(2))}</span>`
+        : `<input type="number" step="0.5" data-i="${i}" value="${e.w}" class="${cls(e.w)}">`;
+      rows.push(`<tr class="row" id="r-${key(e)}" data-i="${i}" data-kind="${e.derived ? "derived" : e.kind === "curse" ? "curse" : "eff"}">
+        <td class="w">${wcell}</td>
+        <td class="name">${esc(e.name)} <small>${e.id}</small>${e.derived ? `<span class="tag">derived</span>` : ""}<span class="flag hidden" id="f-${key(e)}"></span>
+          ${e.derived ? `<div class="ref rule" id="dw-${key(e)}">${esc(e.why)}</div>` : ""}${e.rule ? `<div class="ref rule">${esc(e.rule)}</div>` : ""}${refLine(e)}</td>
+        <td class="stk">${e.derived ? (e.kind === "once" ? "once" : "stacks") : stk}</td>
+        <td class="inv" title="Copies in inventory: normal · deep">${e.n ? "N " + e.n : ""}${e.n && e.d ? " · " : ""}${e.d ? "D " + e.d : ""}</td></tr>`);
+    }
+  };
+  const idx = S.entries.map((e, i) => [i, e]);
+  section("Effects", idx.filter(([, e]) => e.kind !== "curse" && !e.derived));
+  section("Curses", idx.filter(([, e]) => e.kind === "curse" && !e.derived));
+  section("Derived", idx.filter(([, e]) => e.derived));
+  $("#tbody").innerHTML = rows.join("");
+  filter();
+}
+
+function refLine(e) {
+  if (!e.ref) return "";
+  const st = e.kind === "curse" ? "" : ` · <b>stacks: ${esc(e.ref.stack || "?")}</b>`;
+  const tip = `${e.ref.sheet} row ${e.ref.row}: ${e.ref.desc}${e.ref.notes ? "\n" + e.ref.notes : ""}`;
+  return `<div class="ref" title="${esc(tip)}">${esc(e.ref.effect)}${st}${e.ref.notes ? ` · <span>${esc(e.ref.notes.length > 90 ? e.ref.notes.slice(0, 90) + "…" : e.ref.notes)}</span>` : ""}</div>`;
+}
+
+function renderVessels() {
+  const deep = expedition === "don";
+  $("#vessels").innerHTML = S.vessels.map((v, i) => `<label class="${v.on ? "" : "off"}" title="${v.normal}${deep ? " | " + v.deep : ""}">
+    <input type="checkbox" data-v="${i}" ${v.on ? "checked" : ""}>${dots(v.normal, deep ? v.deep : "")} ${esc(v.name)}</label>`).join("");
+}
+function showExp() { for (const b of $("#exp").children) b.classList.toggle("on", b.dataset.x === expedition); }
+const dots = (n, d) => `<span class="dots">${[...n].map(c => `<span class="dot ${c}"></span>`).join("")}${d ? `<span class="sep"></span>` : ""}${[...d].map(c => `<span class="dot ${c}"></span>`).join("")}</span>`;
+
+function isMod(i) { const a = S.entries[i], b = orig.entries[i]; return !a.derived && (a.w !== b.w || a.kind !== b.kind); }
+function dirty() {
+  return S.entries.some((_, i) => isMod(i)) || JSON.stringify(S.damage_model) !== JSON.stringify(orig.damage_model)
+    || S.curse_count_penalty !== orig.curse_count_penalty || S.vessels.some((v, i) => v.on !== orig.vessels[i].on);
+}
+
+function filter() {
+  const q = $("#q").value.trim().toLowerCase(), k = $("#kind").value, nz = $("#nonzero").checked, mo = $("#modonly").checked;
+  const visCats = new Set();
+  for (const tr of document.querySelectorAll("tr.row")) {
+    let e, mod;
+    {
+      const i = +tr.dataset.i; e = S.entries[i]; mod = isMod(i);
+      const f = document.getElementById("f-" + key(e)), bad = e.ref_kind && e.kind !== e.ref_kind;
+      if (f) { f.classList.toggle("hidden", !bad); f.textContent = bad ? `sheet says: ${e.ref_kind === "stack" ? "stacks" : "once"}` : ""; }
+    }
+    tr.classList.toggle("mod", mod);
+    const show = (!k || tr.dataset.kind === k) && (!nz || e.w !== 0) && (!mo || mod)
+      && (!q || e.name.toLowerCase().includes(q) || String(e.id).includes(q)
+          || (e.ref && (e.ref.effect + " " + e.ref.notes).toLowerCase().includes(q))
+          || ((e.rule || e.why || "").toLowerCase().includes(q)));
+    tr.classList.toggle("hidden", !show);
+    if (show) { let p = tr.previousElementSibling; while (p && !p.classList.contains("cat")) p = p.previousElementSibling; if (p) visCats.add(p); }
+  }
+  for (const tr of document.querySelectorAll("tr.cat")) tr.classList.toggle("hidden", !visCats.has(tr));
+  $("#save").disabled = $("#revert").disabled = !dirty();
+}
+
+function changed() { filter(); clearTimeout(timer); timer = setTimeout(solve, 250); }
+
+$("#tbody").addEventListener("input", ev => {
+  const t = ev.target;
+  if (t.type === "number") {
+    const w = parseFloat(t.value); if (Number.isNaN(w)) return;
+    S.entries[+t.dataset.i].w = w;
+    t.className = cls(w); changed();
+  } else if (t.classList.contains("stk")) {
+    S.entries[+t.dataset.i].kind = t.checked ? "stack" : "once"; changed();
+  }
+});
+for (const id of ["#q", "#kind", "#nonzero", "#modonly"]) $(id).addEventListener("input", filter);
+$("#ccp").addEventListener("input", e => { const w = parseFloat(e.target.value); if (!Number.isNaN(w)) { S.curse_count_penalty = w; changed(); } });
+$("#n").addEventListener("input", solve);
+for (const id of ["#dm-ppp", "#dm-weapon", "#dm-two", "#dm-levels"]) $(id).addEventListener("input", () => {
+  const m = { ...S.damage_model }, ppp = parseFloat($("#dm-ppp").value), two = parseFloat($("#dm-two").value);
+  if (!Number.isNaN(ppp)) m.points_per_pct_damage = ppp;
+  if (!Number.isNaN(two)) m.two_handed = Math.min(1, Math.max(0, two));
+  m.weapon = $("#dm-weapon").value;
+  const lv = {};
+  for (const part of $("#dm-levels").value.split(",")) {
+    const [l, w] = part.split(":").map(x => parseFloat(x));
+    if (l >= 1 && l <= 15 && w >= 0) lv[String(Math.round(l))] = w;
+  }
+  if (Object.keys(lv).length) m.level_weights = lv;
+  S.damage_model = m; changed();
+});
+$("#vessels").addEventListener("change", e => { const i = +e.target.dataset.v; S.vessels[i].on = e.target.checked; renderVessels(); changed(); });
+$("#exp").addEventListener("click", e => {
+  if (!e.target.dataset.x) return; expedition = e.target.dataset.x; store.set("expedition", expedition);
+  prevTop = null; showExp(); renderVessels(); solve();
+});
+$("#char").addEventListener("change", e => {
+  if (dirty() && !confirm(`Discard unsaved edits to ${S.character}?`)) { e.target.value = S.character; return; }
+  load(e.target.value);
+});
+$("#mode").addEventListener("click", e => {
+  if (!e.target.dataset.m) return; mode = e.target.dataset.m;
+  for (const b of $("#mode").children) b.classList.toggle("on", b === e.target); solve();
+});
+$("#revert").addEventListener("click", () => { S = JSON.parse(JSON.stringify(orig)); $("#ccp").value = S.curse_count_penalty; fillModel(); render(); renderVessels(); solve(); });
+$("#save").addEventListener("click", async () => {
+  const r = await (await post("/api/save", payload())).json();
+  if (r.error) return status(r.error, true);
+  orig = JSON.parse(JSON.stringify(S)); filter(); status(`Saved to ${S.prefs}`);
+});
+
+function payload() {
+  return { entries: S.entries.filter(e => !e.derived).map(e => ({ id: e.id, kind: e.kind, w: e.w, name: e.name, cat: e.cat })),
+    damage_model: S.damage_model, curse_count_penalty: S.curse_count_penalty,
+    vessels: S.vessels, mode, n: +$("#n").value, character: S.character, expedition };
+}
+const post = (url, body) => fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+function status(t, err) { const s = $("#status"); s.textContent = t; s.style.color = err ? "var(--neg)" : ""; }
+
+async function solve() {
+  const my = ++seq, who = S.character; status("Solving…");
+  let r;
+  try { r = await (await post("/api/solve", payload())).json(); } catch (e) { r = { error: String(e) }; }
+  if (my !== seq || who !== S.character) return;   // a newer edit (or character switch) superseded this solve
+  if (r.error) { status("Error", true); $("#results").innerHTML = `<div class="err">${esc(r.error)}</div>`; return; }
+  status(`Solved in ${(r.ms / 1000).toFixed(1)} s`);
+  for (const [i, e] of S.entries.entries()) {
+    const d = e.derived && r.derived[key(e)]; if (!d) continue;
+    e.w = orig.entries[i].w = d.w; e.why = d.why;
+    const v = document.getElementById("dv-" + key(e)), y = document.getElementById("dw-" + key(e));
+    if (v) { v.textContent = +d.w.toFixed(2); v.className = "dv " + cls(d.w); }
+    if (y) y.textContent = d.why;
+  }
+  showResults(r.builds);
+}
+
+function showResults(builds) {
+  if (!builds.length) { $("#results").innerHTML = `<div class="empty">No builds (all vessels off?)</div>`; return; }
+  const top = builds[0], topRows = new Set(top.slots.map(s => s.rows[0]));
+  const delta = prevTop ? top.score - prevTop.score : 0;
+  const prevRows = prevTop ? new Set(prevTop.slots.map(s => s.rows[0])) : null;
+  $("#results").innerHTML = builds.map((b, k) => `<div class="card">
+    <h2><span>#${k + 1}</span><span class="score">${b.score.toFixed(1)}</span>
+      ${k === 0 && prevTop && Math.abs(delta) > 1e-9 ? `<span class="b ${cls(delta)}">${fmt(delta)}</span>` : ""}
+      <span>${esc(b.vessel)}</span>${dots(b.normal, b.deep)}
+      ${b.also.length ? `<span class="also">same relics fit: ${esc(b.also.join(", "))}</span>` : ""}</h2>
+    ${b.slots.map(s => `<div class="slot ${k === 0 && prevRows && !prevRows.has(s.rows[0]) ? "changed" : ""}">
+      <div class="lab"><span class="dot ${s.color}"></span>${s.label}</div>
+      <div><div class="rel">${esc(s.name)} <small>${esc(s.ref)}${s.rows[0]}${s.rows.length > 1 ? ` (dupes: ${s.rows.slice(1).join(", ")})` : ""}</small></div>
+      ${s.effects.map(e => `<div class="eff" data-k="e${e.id}" title="${esc(e.note)}"><span class="b ${cls(e.w)}">${fmt(e.w)}</span><span class="n">${esc(e.name)}</span>
+          ${/^(duplicate|inert|exclusive)/.test(e.note) ? `<span class="note">${esc(e.note)}</span>` : ""}</div>
+        ${e.curse ? `<div class="eff curse" data-k="c${e.curse.id}" title="includes per-curse penalty"><span class="b ${cls(e.curse.w)}">${fmt(e.curse.w)}</span><span class="n">${esc(e.curse.name)}</span></div>` : ""}`).join("")}
+      </div></div>`).join("")}
+  </div>`).join("");
+  prevTop = top;
+}
+
+// click an effect in a result -> jump to its weight in the table
+$("#results").addEventListener("click", e => {
+  const el = e.target.closest(".eff"); if (!el) return;
+  const tr = document.getElementById("r-" + el.dataset.k);
+  if (!tr) return status(`${el.dataset.k.slice(1)} not in prefs (inert / unlisted)`);
+  if (tr.classList.contains("hidden")) { $("#q").value = ""; $("#kind").value = ""; $("#nonzero").checked = $("#modonly").checked = false; filter(); }
+  tr.scrollIntoView({ block: "center" });
+  tr.classList.add("flash"); setTimeout(() => tr.classList.remove("flash"), 50);
+  const inp = tr.querySelector("input[type=number]"); if (inp) { inp.focus(); inp.select(); }
+});
+load();
+</script>
+</body>
+</html>
