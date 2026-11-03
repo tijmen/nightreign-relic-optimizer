@@ -198,6 +198,21 @@ def slots_of(vessel, deep):
     return [(c, False) for c in vessel["normal"]] + ([(c, True) for c in vessel["deep"]] if deep else [])
 
 
+def arrange(used, slots):
+    """[(slot, type)] for relic types `used`: the valid placement that is smallest by save row, slot by slot.
+    The solver places relics that fit several slots arbitrarily; this makes the order depend only on the relics."""
+    fits = lambda t, s: t["deep"] == slots[s][1] and (slots[s][0] == "W" or COLOR[slots[s][0]] == t["color"])
+    best = None
+    for perm in itertools.permutations(range(len(slots)), len(used)):
+        if all(fits(t, s) for t, s in zip(used, perm)):
+            key = [float("inf")] * len(slots)
+            for t, s in zip(used, perm):
+                key[s] = t["rows"][0]
+            if best is None or key < best[0]:
+                best = key, perm
+    return sorted(zip(best[1], used), key=lambda st: st[0])
+
+
 def solutions(vessel, types, prefs, deep=True):
     """Yield (score, build) for one vessel, best first."""
     slots = slots_of(vessel, deep)
@@ -247,12 +262,8 @@ def solutions(vessel, types, prefs, deep=True):
         if prob.solve(solver) != pulp.LpStatusOptimal:
             return
         chosen = [i for i in b if b[i].value() > .5]
-        build = []
-        for s in range(len(slots)):
-            for i in by_t:
-                if (i, s) in x and x[i, s].value() > .5:
-                    build.append((s, types[i]))
-        yield pulp.value(prob.objective), build
+        used = [types[i] for (i, s), v in x.items() if v.value() > .5]
+        yield pulp.value(prob.objective), arrange(used, slots)
         # exclude exactly this set of relic types next time
         prob += pulp.lpSum(b[i] for i in chosen) - pulp.lpSum(b[i] for i in b if i not in chosen) <= len(chosen) - 1
 
