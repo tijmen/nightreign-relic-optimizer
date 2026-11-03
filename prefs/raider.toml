@@ -3,7 +3,7 @@
 # Weights are "points"; only their relative size matters.
 
 character = "Raider"          # effects tagged for other characters score 0
-curse_count_penalty = -1      # extra points per curse of any kind (you want few curses)
+curse_count_penalty = 0      # extra points per curse of any kind (you want few curses)
 unknown_curse_weight = -5     # curses not listed in [curses] (until you run --sync and set them)
 top = 10                      # builds to print overall
 per_vessel = 1                # also print the best N builds for each vessel
@@ -35,7 +35,7 @@ vessels = [
 # ----------------------------------------------------------------------------
 [damage_model]
 points_per_pct_damage = 1
-weapon = "Raider's Greataxe"
+weapon = "Axe of Godfrey"
 two_handed = 0.75
 level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1, 10 = 1, 11 = 1, 12 = 1, 13 = 1, 14 = 1, 15 = 1 }
 
@@ -148,9 +148,9 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7000102 = 0     # Mind +3
 7000101 = 0     # Mind +2
 7000100 = 0     # Mind +1
-7000000 = 1     # Vigor +1
-7000001 = 2     # Vigor +2
-7000002 = 3     # Vigor +3
+7000000 = 1.5   # Vigor +1
+7000001 = 3     # Vigor +2
+7000002 = 4.5   # Vigor +3
 7000200 = 0.3   # Endurance +1
 7000201 = 0.6   # Endurance +2
 7000202 = 0.9   # Endurance +3
@@ -159,7 +159,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7001002 = 3     # Poise +3
 # --- Attack power
 7035800 = 1     # Boosts Attack Power of Added Affinity Attacks
-7006700 = 3     # Improved Skill Attack Power
+7006700 = 4     # Improved Skill Attack Power
 7001802 = 1     # Holy Attack Power Up +2
 7001801 = 0.5   # Holy Attack Power Up +1
 7001800 = 0.5   # Holy Attack Power Up
@@ -184,13 +184,13 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6001501 = 3     # Magic Attack Power Up +4
 6001500 = 2.5   # Magic Attack Power Up +3
 # --- Damage negation & resistances
-7003600 = 0.5   # Improved Madness Resistance
-7003500 = 0.8   # Improved Frost Resistance
-7003400 = 0.8   # Improved Rot Resistance
-7003300 = 0.3   # Improved Death Blight Resistance
-7003200 = 0.3   # Improved Sleep Resistance
-7003100 = 0.3   # Improved Blood Loss Resistance
-7003000 = 0.3   # Improved Poison Resistance
+7003600 = 1     # Improved Madness Resistance
+7003500 = 1     # Improved Frost Resistance
+7003400 = 1     # Improved Rot Resistance
+7003300 = 0.5   # Improved Death Blight Resistance
+7003200 = 1     # Improved Sleep Resistance
+7003100 = 1     # Improved Blood Loss Resistance
+7003000 = 1     # Improved Poison Resistance
 7002900 = 1     # Holy Damage Negation Up
 7002800 = 1     # Lightning Damage Negation Up
 7002700 = 1     # Fire Damage Negation Up
@@ -213,8 +213,8 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6002700 = 1.5   # Improved Fire Damage Negation +1
 6002601 = 2     # Improved Magic Damage Negation +2
 6002600 = 1.5   # Improved Magic Damage Negation +1
-6611001 = 5     # Improved Physical Damage Negation +1
-6611002 = 6     # Improved Physical Damage Negation +2
+6611001 = 7     # Improved Physical Damage Negation +1
+6611002 = 8.5   # Improved Physical Damage Negation +2
 7012300 = 3     # Improved Damage Negation at Low HP
 # --- Skill / Art gauge
 7043100 = 0     # Improved Perfuming Arts
@@ -261,7 +261,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 
 [once]
 # --- Raider
-6500400 = 9     # [Raider] Hit With Character Skill to Reduce Enemy Attack Power
+6500400 = 8     # [Raider] Hit With Character Skill to Reduce Enemy Attack Power
 6644000 = -6    # [Raider] Improved Mind and Intelligence, Reduced Vigor and Endurance
 6644100 = -4    # [Raider] Improved Arcane, Reduced Vigor
 7031300 = 7     # [Raider] Damage taken while using Character Skill improves attack power and stamina
@@ -270,11 +270,11 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 # --- Max HP / FP / stamina
 6060300 = 2     # Max HP increased for each great enemy defeated at a Great Church.
 6060600 = 1     # Max stamina increased for each great enemy defeated at a Great Encampment
-7000090 = 6     # Increased Maximum HP
+7000090 = 7     # Increased Maximum HP
 7000190 = 0.5   # Increased Maximum FP
 7000290 = 1.5   # Increased Maximum Stamina
 # --- Attack power
-7032200 = 7     # Taking attacks improves attack power
+7032200 = 6.5   # Taking attacks improves attack power
 6030900 = 0.6   # Physical attack power increases after using grease items +1
 6030901 = 0.8   # Physical attack power increases after using grease items +2
 6260000 = 0.5   # Attack power up when facing poison-afflicted enemy +1
@@ -291,20 +291,20 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7035900 = 0.5   # Switching Weapons Boosts Attack Power
 7037700 = 0     # Status Ailment Gauges Slowly Increase Attack Power
 7060000 = 3     # Attack power increased for each evergaol prisoner defeated
-7060200 = 7.5   # Attack power increased for each Night Invader defeated
+7060200 = 10    # Attack power increased for each Night Invader defeated
 7260000 = 0.5   # Attack power up when facing poison-afflicted enemy
 7260300 = 0.5   # Attack power up when facing scarlet rot-afflicted enemy
 7260400 = 0.5   # Attack power up when facing frostbite-afflicted enemy
 7260800 = 1.5   # Poison & Rot in Vicinity Increases Attack Power
 # --- Damage negation & resistances
 7037800 = 3     # Occasionally Nullify Attacks When Damage Negation is Lowered
-7240000 = 9     # Improved Poise & Damage Negation When Knocked Back by Damage
+7240000 = 7     # Improved Poise & Damage Negation When Knocked Back by Damage
 # --- Healing & recovery
-7005600 = 10    # Partial HP Restoration upon Post-Damage Attacks (rally; +1/+2 tiers derived)
+7005600 = 11    # Partial HP Restoration upon Post-Damage Attacks (rally; +1/+2 tiers derived)
 6030200 = 0.5   # HP restored when using medicinal boluses, etc. +1
 6035100 = 1.5   # Critical Hit Boosts Stamina Recovery Speed +1
 6160000 = 0.5   # HP Restoration upon Thrusting Counterattack +1
-7010200 = 8     # Flask Also Heals Allies
+7010200 = 9     # Flask Also Heals Allies
 7012200 = 3     # Slowly restore HP for self and nearby allies when HP is low
 7030200 = 0.3   # HP restored when using medicinal boluses, etc.
 7035100 = 0.5   # Critical Hit Boosts Stamina Recovery Speed
@@ -320,7 +320,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7260900 = 1     # Rot in Vicinity Causes Continuous HP Recovery
 # --- Team support
 7050000 = 0.5   # Raised stamina recovery for nearby allies, but not for self
-7050100 = 7     # Items confer effect to all nearby allies
+7050100 = 4     # Items confer effect to all nearby allies
 # --- Skill / Art gauge
 6030600 = 0     # Successful guarding fills more of the Art gauge +1
 6030800 = 0.5   # Critical hits fill more of the Art gauge +1
@@ -502,7 +502,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6830200 = -0.3  # Reduced Intelligence and Dexterity
 6830400 = -1.5  # Reduced Vigor and Arcane
 6840000 = -1    # Reduced Rune Acquisition
-6840100 = -3    # Reduced Flask HP Restoration
+6840100 = -8    # Reduced Flask HP Restoration
 6840200 = -1.5  # Ultimate Art Charging Impaired
 6850200 = -2    # All Resistances Down
 6850500 = -3    # Continuous HP Loss
@@ -511,5 +511,5 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6850900 = -2    # Reduced Damage Negation for Flask Usages
 6851200 = -8    # Lower Attack When Below Max HP
 6851300 = -6    # Poison Buildup When Below Max HP
-6851400 = -6    # Rot Buildup When Below Max HP
-6851700 = -2    # Near Death Reduces Max HP
+6851400 = -5    # Rot Buildup When Below Max HP
+6851700 = -7    # Near Death Reduces Max HP

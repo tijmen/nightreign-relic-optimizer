@@ -268,8 +268,8 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6640100 = -8    # [Wylder] Improved Intelligence and Faith, Reduced Strength and Dexterity
 7010500 = 2     # [Wylder] Art activation spreads fire in area
 7020000 = 4     # [Wylder] Standard attacks enhanced with fiery follow-ups when using Character Skill (greatsword only)
-7032400 = 4     # [Wylder] Art gauge greatly filled when ability is activated
-7033200 = 5     # [Wylder] +1 additional Character Skill use
+7032400 = 12.5  # [Wylder] Art gauge greatly filled when ability is activated
+7033200 = 14    # [Wylder] +1 additional Character Skill use
 # --- Stats & poise
 # --- Max HP / FP / stamina
 6060300 = 2     # Max HP increased for each great enemy defeated at a Great Church.
