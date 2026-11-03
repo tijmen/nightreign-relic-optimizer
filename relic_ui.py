@@ -243,6 +243,8 @@ def make_handler(app):
                     self.send(dict(ok=True))
                 else:
                     self.send(b"not found", "text/plain", 404)
+            except ConnectionError:   # the page dropped the request (e.g. a newer edit superseded this solve)
+                pass
             except Exception as ex:   # surface errors in the page instead of killing the request silently
                 self.send(dict(error=f"{type(ex).__name__}: {ex}"), code=500)
 

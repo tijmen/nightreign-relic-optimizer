@@ -23,6 +23,7 @@ ALIASES = {
     7006001: 7006000,                  # Improved Stance-Breaking when Two-Handing
     7006101: 7006100,                  # Improved Stance-Breaking when Wielding Two Armaments
     10000: 7036000,                    # FP Restoration upon Successive Attacks
+    7126001: 7126000, 7126002: 7126000,   # Starlight Shards in possession at start of expedition
     # unique character relics carry their own copy of a generic effect ID
     10002: 7035900,                    # Fell Omen Fetish: Switching Weapons Boosts Attack Power
     11000: 7033200,                    # The Wylder's Earring: [Wylder] +1 additional Character Skill use
