@@ -918,6 +918,15 @@
    "stack": "Yes",
    "notes": ""
   },
+  "6623200": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
   "6624000": {
    "sheet": "Relic Effects",
    "row": 14,
@@ -971,6 +980,15 @@
    "effect": "Self explanatory",
    "stack": "Yes",
    "notes": ""
+  },
+  "6630000": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
   },
   "6630100": {
    "sheet": "Deep Relic Effects",
@@ -1304,6 +1322,15 @@
    "effect": "Decreases mind by 14, increases strength by 24 and vigor by 3",
    "stack": "No",
    "notes": "-70 FP, +60 HP"
+  },
+  "6643100": {
+   "sheet": "Deep Relic Effects",
+   "row": 49,
+   "cat": "Character",
+   "desc": "[Duchess] Improved Mind and Faith, Reduced Intelligence",
+   "effect": "Decreases intelligence by 5, increases faith by 13 and mind by 3",
+   "stack": "No",
+   "notes": "+15 FP; 14% increase to incant damage vs base duchess, but still 10% lower than Revenant"
   },
   "6644000": {
    "sheet": "Deep Relic Effects",
@@ -3465,6 +3492,24 @@
    "stack": "Yes",
    "notes": ""
   },
+  "7126001": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7126002": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
   "7150000": {
    "sheet": "Relic Effects",
    "row": 40,
@@ -4386,15 +4431,6 @@
    "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
   },
   "6820500": {
-   "sheet": "Deep Relic Effects",
-   "row": 62,
-   "cat": "Curse",
-   "desc": "Taking Damage Causes [Status] Buildup",
-   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
-   "stack": "Yes",
-   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
-  },
-  "6820600": {
    "sheet": "Deep Relic Effects",
    "row": 62,
    "cat": "Curse",

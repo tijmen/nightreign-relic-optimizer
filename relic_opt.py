@@ -77,6 +77,7 @@ REF_PATH = Path(__file__).with_name("reference") / "effect_ref.json"   # built b
 REF_KIND_OVERRIDE = {
     7040200: "stack",   # Improved Critical Hits +0: stacks with itself and with +1
     7040201: "once",    # Improved Critical Hits +1: doesn't stack with itself
+    6040400: "once",    # Improved Throwing Knife Damage +1: stacks with +0, not with itself (assumed, like Critical Hits)
 }
 
 
