@@ -291,13 +291,19 @@ function payload() {
     damage_model: S.damage_model, curse_count_penalty: S.curse_count_penalty,
     vessels: S.vessels, mode, n: +$("#n").value, character: S.character, expedition };
 }
-const post = (url, body) => fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+const post = (url, body, signal) => fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body), signal });
 function status(t, err) { const s = $("#status"); s.textContent = t; s.style.color = err ? "var(--neg)" : ""; }
 
+let solving = null;
 async function solve() {
   const my = ++seq, who = S.character; status("Solving…");
+  if (solving) solving.abort();   // a newer edit supersedes the solve in flight
+  const ctl = solving = new AbortController(), body = payload();
   let r;
-  try { r = await (await post("/api/solve", payload())).json(); } catch (e) { r = { error: String(e) }; }
+  for (let attempt = 0; ; attempt++) {   // one retry: a dropped connection is transient, solving is idempotent
+    try { r = await (await post("/api/solve", body, ctl.signal)).json(); break; }
+    catch (e) { if (ctl.signal.aborted) return; if (attempt) { r = { error: String(e) }; break; } }
+  }
   if (my !== seq || who !== S.character) return;   // a newer edit (or character switch) superseded this solve
   if (r.error) { status("Error", true); $("#results").innerHTML = `<div class="err">${esc(r.error)}</div>`; return; }
   status(`Solved in ${(r.ms / 1000).toFixed(1)} s`);
