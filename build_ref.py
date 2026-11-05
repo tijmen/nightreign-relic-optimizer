@@ -190,7 +190,7 @@ def build(export, ref_path=DEFAULT_REF):
             effects[e] = n
             if c is not None:
                 curses[c] = cn
-    out, missing = {"effects": {}, "curses": {}}, []
+    out, missing = {k: dict(prev[k]) for k in ("effects", "curses")}, []   # keep IDs no longer in the inventory
     for kind, table in (("effects", effects), ("curses", curses)):
         for i, n in sorted(table.items()):
             ref = find(rows, n, deep_first=kind == "curses" or str(i).startswith("6")) or prev[kind].get(str(i))
