@@ -4382,6 +4382,33 @@
    "effect": "Self explanatory",
    "stack": "No",
    "notes": ""
+  },
+  "6622400": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "6622600": {
+   "sheet": "Relic Effects",
+   "row": 14,
+   "cat": "Start of game",
+   "desc": "[Consumable] in possession at start of expedition",
+   "effect": "Self explanatory",
+   "stack": "Yes",
+   "notes": ""
+  },
+  "7331100": {
+   "sheet": "Relic Effects",
+   "row": 45,
+   "cat": "Offensive",
+   "desc": "Improve [Weapon Type] attack power",
+   "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
+   "stack": "Yes",
+   "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
   }
  },
  "curses": {
@@ -4591,6 +4618,15 @@
    "effect": "Reduces maximum HP by 0.75x for 60 seconds after being downed",
    "stack": "Yes",
    "notes": ""
+  },
+  "6820600": {
+   "sheet": "Deep Relic Effects",
+   "row": 62,
+   "cat": "Curse",
+   "desc": "Taking Damage Causes [Status] Buildup",
+   "effect": "Taking damage inflicts 32 (deathblight) / 40 (madness, sleep) / 44 (bleed, rot, frostbite) / 52 (poison) buildup on the user",
+   "stack": "Yes",
+   "notes": "Poison / Rot / Frost does not trigger executor ability Tenacity until the status is recovered"
   }
  }
 }
