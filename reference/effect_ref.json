@@ -4409,6 +4409,33 @@
    "effect": "Increase damage dealt by the specified weapon type by 1.09x (1.06x for bows)",
    "stack": "Yes",
    "notes": "Applies to weapon hit AoW (using said weapon). Does not apply to projectile AoW like thunderbolt, even when cast with said weapon type."
+  },
+  "7080200": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7081400": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "7082100": {
+   "sheet": "Relic Effects",
+   "row": 46,
+   "cat": "Offensive",
+   "desc": "Improved Attack Power with 3 [Weapon Type] Equipped",
+   "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
+   "stack": "No",
+   "notes": "Works for damage from all sources. E.g. spells"
   }
  },
  "curses": {

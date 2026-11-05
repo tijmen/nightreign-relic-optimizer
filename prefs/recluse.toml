@@ -53,10 +53,6 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 # ============================================================================
 
 [stacking]
-# --- new in save 2026-11-04 (weight 0, review)
-6622400 = 1     # Twiggy Cracked Tear in possession at start of expedition
-6622600 = 1     # Cerulean Hidden Tear in possession at start of expedition
-7331100 = 0     # Improved Greataxe Attack Power
 # --- Team support
 7110000 = 5     # Increased rune acquisition for self and allies
 # --- Healing & recovery
@@ -139,6 +135,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7331400 = 0     # Improved Flail Attack Power
 7331300 = 0     # Improved Great Hammer Attack Power
 7331200 = 0     # Improved Hammer Attack Power
+7331100 = 0     # Improved Greataxe Attack Power
 7331000 = 0     # Improved Axe Attack Power
 7330900 = 0     # Improved Heavy Thrusting Sword Attack Power
 7330800 = 0     # Improved Thrusting Sword Attack Power
@@ -216,7 +213,9 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6622900 = 1     # Magic-Shrouding Cracked Tear in possession at start of expedition
 6622800 = 1     # Flame-Shrouding Cracked Tear in possession at start of expedition
 6622700 = 1     # Stonebarb Cracked Tear in possession at start of expedition
+6622600 = 1     # Cerulean Hidden Tear in possession at start of expedition
 6622500 = 1     # Crimsonwhorl Bubbletear in possession at start of expedition
+6622400 = 1     # Twiggy Cracked Tear in possession at start of expedition
 6622300 = 1     # Leaden Hardtear in possession at start of expedition
 6623200 = 0     # Greenspill Crystal Tear in possession at start of expedition
 6622200 = 1     # Ruptured Crystal Tear in possession at start of expedition
@@ -362,6 +361,7 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 6633100 = 0     # Dormant Power Helps Discover Sacred Seals
 7080000 = 0     # Improved Attack Power with 3+ Daggers Equipped
 7080100 = 0     # Improved Attack Power with 3+ Straight Swords Equipped
+7080200 = 0     # Improved Attack Power with 3+ Greatswords Equipped
 7080300 = 0     # Improved Attack Power with 3+ Colossal Swords Equipped
 7080400 = 0     # Improved Attack Power with 3+ Curved Swords Equipped
 7080500 = 0     # Improved Attack Power with 3+ Curved Greatswords Equipped
@@ -373,11 +373,13 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 7081100 = 0     # Improved Attack Power with 3+ Greataxes Equipped
 7081200 = 0     # Improved Attack Power with 3+ Hammers Equipped
 7081300 = 0     # Improved Attack Power with 3+ Great Hammers Equipped
+7081400 = 0     # Improved Attack Power with 3+ Flails Equipped
 7081500 = 0     # Improved Attack Power with 3+ Spears Equipped
 7081700 = 0     # Improved Attack Power with 3+ Great Spears Equipped
 7081800 = 0     # Improved Attack Power with 3+ Halberds Equipped
 7081900 = 0     # Improved Attack Power with 3+ Reapers Equipped
 7082000 = 0     # Improved Attack Power with 3+ Fists Equipped
+7082100 = 0     # Improved Attack Power with 3+ Claws Equipped
 7082200 = 0     # Improved Attack Power with 3+ Whips Equipped
 7082300 = 0     # Improved Attack Power with 3+ Colossal Weapons Equipped
 7082400 = 0     # Improved Attack Power with 3+ Bows Equipped
