@@ -54,6 +54,10 @@ derive_dex = true   # Dexterity +n and Dexterity curses computed like Strength
 # ============================================================================
 
 [stacking]
+# --- new in save 2026-11-04 (weight 0, review)
+6622400 = 1     # Twiggy Cracked Tear in possession at start of expedition
+6622600 = 1     # Cerulean Hidden Tear in possession at start of expedition
+7331100 = 0     # Improved Greataxe Attack Power
 # --- Team support
 7110000 = 5     # Increased rune acquisition for self and allies
 # --- Healing & recovery

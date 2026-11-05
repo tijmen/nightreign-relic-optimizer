@@ -53,6 +53,10 @@ level_weights = { 1 = 1, 2 = 1, 3 = 1, 4 = 1, 5 = 1, 6 = 1, 7 = 1, 8 = 1, 9 = 1,
 # ============================================================================
 
 [stacking]
+# --- new in save 2026-11-04 (weight 0, review)
+6622400 = 1     # Twiggy Cracked Tear in possession at start of expedition
+6622600 = 1     # Cerulean Hidden Tear in possession at start of expedition
+7331100 = 0     # Improved Greataxe Attack Power
 # --- Team support
 7110000 = 5     # Increased rune acquisition for self and allies
 # --- Healing & recovery
