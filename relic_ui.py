@@ -1,4 +1,6 @@
-"""Interactive weight editor: edit preference weights in a table, see the top loadouts update live.
+"""Relic Optimizer web UI. Two tabs:
+  * Builds: edit preference weights in a table, see the top loadouts update live.
+  * Keep & sell: the relics to favorite in game before selling the rest (favorites.recommend), for your chosen mains.
 
 Usage:  uv run relic_ui.py [NR0000.sl2 | all_relics_exported_YYYYMMDD.xlsx] [--slot NAME] [--port 8765]
         (default: your save in %APPDATA%\\Nightreign; reload the page after playing to re-read it)
@@ -13,6 +15,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+import favorites
 import relic_opt as ro
 import rules
 
@@ -94,6 +97,7 @@ class App:
         if not self.characters:
             raise SystemExit(f"no prefs files in {ro.PREFS_DIR}")
         self.lock = threading.Lock()
+        self.keep_lock, self.keep_cache = threading.Lock(), {}
         self.reload()
 
     def reload(self):
@@ -147,6 +151,20 @@ class App:
                     damage_model=prefs.model.cfg, weapons=sorted(game["weapons"]),
                     curse_count_penalty=raw.get("curse_count_penalty", 0),
                     unknown=len(prefs.unknown_effects) + len(prefs.unknown_curses))
+
+    def keep(self, mains):
+        """favorites.recommend for these mains, cached until the save or a prefs file changes."""
+        mains = tuple(c for c in ro.CHARACTERS if c in mains and c in self.characters)
+        stamp = (self.source.stat().st_mtime, tuple(ro.prefs_path(c).stat().st_mtime for c in self.characters))
+        with self.keep_lock:   # one at a time: each run already uses all cores
+            hit = self.keep_cache.get(mains)
+            if hit and hit[0] == stamp:
+                return hit[1]
+            t0 = time.perf_counter()
+            r = favorites.recommend(self.export, self.slot, mains)
+            r["ms"] = round((time.perf_counter() - t0) * 1000)
+            self.keep_cache[mains] = (stamp, r)
+            return r
 
     def solve(self, st):
         raw = tomllib.loads(self.path(st["character"]).read_text(encoding="utf-8"))
@@ -227,6 +245,12 @@ def make_handler(app):
                 c = parse_qs(url.query).get("character", [""])[0]
                 self.send(app.state(c if c in app.characters else
                                     "Raider" if "Raider" in app.characters else app.characters[0]))
+            elif url.path == "/api/keep":
+                mains = parse_qs(url.query).get("mains", [""])[0].split(",")
+                try:
+                    self.send(app.keep(mains))
+                except Exception as ex:
+                    self.send(dict(error=f"{type(ex).__name__}: {ex}"), code=500)
             elif self.path == "/favicon.ico":
                 self.send(b"", "image/x-icon", 204)
             else:
@@ -261,7 +285,7 @@ def main():
     app = App(a.export, a.slot)
     srv = ThreadingHTTPServer(("127.0.0.1", a.port), make_handler(app))
     url = f"http://127.0.0.1:{a.port}/"
-    print(f"Relic weight editor at {url}  (Ctrl+C to stop)")
+    print(f"Relic Optimizer at {url}  (Ctrl+C to stop)")
     if not a.no_browser:
         webbrowser.open(url)
     srv.serve_forever()

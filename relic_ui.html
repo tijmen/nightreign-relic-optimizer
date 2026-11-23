@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Relic Weights</title>
+<title>Relic Optimizer</title>
 <style>
 :root {
   --bg: #f6f5f2; --panel: #ffffff; --ink: #1d1d1f; --muted: #6b6b70; --line: #e3e1dc; --hover: #f1efe9;
@@ -93,19 +93,63 @@ td.name .ref.rule { color: var(--accent); }
 .eff.curse .n { color: var(--neg); }
 .err { color: var(--neg); white-space: pre-wrap; }
 .empty { color: var(--muted); padding: 20px; text-align: center; }
+#tabs button { padding: 5px 14px; font-weight: 600; }
+body.tab-keep .builds-only { display: none; }
+body:not(.tab-keep) #keep { display: none; }
+#keep { padding: 16px; max-width: 1200px; }
+#keep .head { padding: 12px 14px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+#keep .head .row1 { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+#keep .help { color: var(--muted); font-size: 13px; margin: 0; }
+#keep .summary { font-size: 15px; }
+#keep .summary b { font-variant-numeric: tabular-nums; }
+#keep .summary .sell { color: var(--neg); }
+#keep .summary .fav { color: var(--pos); }
+#keep .summary .meta { color: var(--muted); font-size: 12px; }
+#keep table td { padding: 6px 10px; vertical-align: top; }
+#keep thead td { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; background: var(--bg); }
+#keep td.num { width: 56px; font-variant-numeric: tabular-nums; font-weight: 700; text-align: right; }
+#keep td.chk { width: 30px; }
+#keep td.relic { width: 24%; font-weight: 600; }
+#keep td.relic small { font-weight: 400; color: var(--muted); }
+#keep td.effs div { font-size: 13px; }
+#keep td.effs .curse { color: var(--neg); padding-left: 14px; font-size: 12px; }
+#keep td.why { width: 32%; font-size: 12px; color: var(--muted); }
+#keep td.why span { display: inline-block; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin: 0 3px 3px 0; color: var(--ink); white-space: nowrap; }
+#keep td.why span.score { border-color: var(--pos); color: var(--pos); }
+#keep tr.done td { opacity: .4; }
+#keep tr.done td.relic { text-decoration: line-through; }
+#keep tbody tr:hover td { background: var(--hover); }
+@media (max-width: 700px) { #keep { padding: 8px; } #keep td.relic, #keep td.why { width: auto; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>Relic Weights</h1>
-  <select id="char" title="Nightfarer: each has its own prefs/<name>.toml"></select>
-  <span class="meta" id="meta"></span>
+  <h1>Relic Optimizer</h1>
+  <div class="seg" id="tabs"><button data-t="builds">Builds</button><button data-t="keep">Keep &amp; sell</button></div>
+  <select id="char" class="builds-only" title="Nightfarer: each has its own prefs/<name>.toml"></select>
+  <span class="meta builds-only" id="meta"></span>
   <span class="spacer"></span>
-  <span id="status"></span>
-  <button id="revert" disabled title="Discard unsaved edits">Revert</button>
-  <button id="save" class="primary" disabled>Save</button>
+  <span id="status" class="builds-only"></span>
+  <button id="revert" class="builds-only" disabled title="Discard unsaved edits">Revert</button>
+  <button id="save" class="primary builds-only" disabled>Save</button>
 </header>
-<main>
+<section id="keep">
+  <div class="panel">
+    <div class="head">
+      <div class="row1">
+        <b>Your mains</b>
+        <div class="vessels" id="mains"></div>
+        <span class="spacer" style="flex:1"></span>
+        <span class="meta" id="keep-status"></span>
+        <button id="keep-run" title="Re-read the save and recompute">Refresh</button>
+      </div>
+      <p class="help">Instructions: favorite the following relics, then sell the rest.<span id="keep-unsaved"></span></p>
+      <div class="summary" id="keep-summary"></div>
+    </div>
+    <div id="keep-body"><div class="empty">Loading…</div></div>
+  </div>
+</section>
+<main class="builds-only">
   <section id="left" class="panel">
     <div class="toolbar">
       <input type="search" id="q" placeholder="Filter by name or ID…" autocomplete="off">
@@ -348,7 +392,67 @@ $("#results").addEventListener("click", e => {
   tr.classList.add("flash"); setTimeout(() => tr.classList.remove("flash"), 50);
   const inp = tr.querySelector("input[type=number]"); if (inp) { inp.focus(); inp.select(); }
 });
-load();
+
+// ---------------------------------------------------------------- Keep & sell tab
+let mains = null, keepSeq = 0, keepTimer = null, keepLoaded = false;
+const done = new Set();   // rows ticked off in this page view
+function tab(t) {
+  document.body.classList.toggle("tab-keep", t === "keep");
+  for (const b of $("#tabs").children) b.classList.toggle("on", b.dataset.t === t);
+  store.set("tab", t);
+  if (location.hash !== "#" + t) history.replaceState(null, "", "#" + t);
+  if (t !== "keep") return;
+  renderMains();
+  $("#keep-unsaved").textContent = S && dirty() ? ` Your unsaved ${S.character} edits are not included.` : "";
+  if (!keepLoaded) keepRun();
+}
+$("#tabs").addEventListener("click", e => { if (e.target.dataset.t) tab(e.target.dataset.t); });
+function renderMains() {
+  const chars = S ? S.characters : [];
+  if (!mains) { try { mains = JSON.parse(store.get("mains")); } catch {} }
+  if (!Array.isArray(mains)) mains = [];
+  mains = mains.filter(c => chars.includes(c));
+  if (!mains.length) mains = [chars.includes("Raider") ? "Raider" : chars[0]];
+  $("#mains").innerHTML = chars.map(c => `<label class="${mains.includes(c) ? "" : "off"}"><input type="checkbox" data-c="${esc(c)}" ${mains.includes(c) ? "checked" : ""}>${esc(c)}</label>`).join("");
+}
+$("#mains").addEventListener("change", e => {
+  const c = e.target.dataset.c;
+  mains = e.target.checked ? [...mains, c] : mains.filter(x => x !== c);
+  if (!mains.length) mains = [c];   // keep at least one main
+  store.set("mains", JSON.stringify(mains)); renderMains();
+  clearTimeout(keepTimer); keepTimer = setTimeout(keepRun, 400);
+});
+$("#keep-run").addEventListener("click", keepRun);
+async function keepRun() {
+  const my = ++keepSeq; keepLoaded = true;
+  $("#keep-status").textContent = "Working out every nightfarer's builds…";
+  let r;
+  try { r = await (await fetch("/api/keep?mains=" + encodeURIComponent(mains.join(",")))).json(); }
+  catch (e) { r = { error: String(e) }; }
+  if (my !== keepSeq) return;   // mains changed meanwhile
+  if (r.error) { $("#keep-status").textContent = "Error"; $("#keep-body").innerHTML = `<div class="err" style="padding:12px">${esc(r.error)}</div>`; return; }
+  $("#keep-status").textContent = `${r.source} · ${(r.ms / 1000).toFixed(1)} s`;
+  $("#keep-summary").innerHTML = (r.has_favorites ? "" : "⚠ This source has no favorite flags (not a save file), so nothing counts as favorited. ")
+    + `<b class="fav">${r.keep.length}</b> to favorite, <b class="sell">${r.sell}</b> to sell`
+    + ` <span class="meta">(${r.favorited} already favorited, ${r.total} relics)</span>`;
+  if (!r.keep.length) { $("#keep-body").innerHTML = `<div class="empty">Nothing new to favorite: sell every relic that isn't favorited.</div>`; return; }
+  const chip = s => `<span class="${s.startsWith("Scores") ? "score" : ""}">${esc(s)}</span>`;
+  $("#keep-body").innerHTML = `<table><thead><tr><td class="chk"></td><td class="num">#</td><td>Relic</td><td>Effects</td><td>Reason</td></tr></thead><tbody>
+    ${r.keep.map(k => `<tr data-row="${k.row}" class="${done.has(k.row) ? "done" : ""}">
+      <td class="chk"><input type="checkbox" ${done.has(k.row) ? "checked" : ""} title="Mark as favorited"></td>
+      <td class="num">${k.row}</td>
+      <td class="relic"><span class="dot ${esc(k.color[0])}"></span> ${esc(k.name)}${k.deep ? ` <small>deep</small>` : ""}</td>
+      <td class="effs">${k.effects.map(e => `<div>${esc(e.name)}</div>${e.curse ? `<div class="curse">${esc(e.curse)}</div>` : ""}`).join("")}</td>
+      <td class="why" title="${esc(k.reasons.join("\n"))}">${k.reasons.slice(0, 4).map(chip).join("")}${k.reasons.length > 4 ? ` +${k.reasons.length - 4} more` : ""}</td>
+    </tr>`).join("")}</tbody></table>`;
+}
+$("#keep-body").addEventListener("change", e => {
+  const tr = e.target.closest("tr"); if (!tr) return;
+  const row = +tr.dataset.row; e.target.checked ? done.add(row) : done.delete(row);
+  tr.classList.toggle("done", e.target.checked);
+});
+
+load().then(() => tab(["#keep", "#builds"].includes(location.hash) ? location.hash.slice(1) : store.get("tab") || "builds"));
 </script>
 </body>
 </html>

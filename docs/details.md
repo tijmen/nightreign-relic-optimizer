@@ -25,11 +25,23 @@ colors, deep-ness and effect names come from the game tables in `reference/save_
 Options: `--character Duchess` (default: all), `--mode don|normal` (default: the file's `mode`, else `don`),
 `--top N`, `--per-vessel N`, `--vessel "Urn"` (name filter), `--prefs other.toml`.
 
-## Interactive editor
-`uv run relic_ui.py` opens http://127.0.0.1:8765/. Pick the nightfarer in the header and
+## Web UI (Relic Optimizer)
+`uv run relic_ui.py` opens http://127.0.0.1:8765/. It has two tabs, *Builds* and *Keep & sell* (`#builds` / `#keep` in
+the URL; the last one used is remembered).
+
+**Builds**: pick the nightfarer in the header and
 Deep of Night / Normal above the results (both remembered per browser). Edit weights / stacking / vessels in the table
 and the top loadouts re-solve on every change (~1.5 s). Click an effect in a result to jump to its weight. "Save to
 prefs/<character>.toml" writes edits back (comments and layout kept); unsaved edits are lost on reload.
+
+**Keep & sell**: the relics to favorite in game before selling everything that isn't favorited (`favorites.recommend`,
+also `uv run favorites.py` → `favorites.md`). Choose your mains (one or more; remembered per browser). A relic is kept
+if, in Deep of Night or Normal, it's in any nightfarer's best loadout on some vessel or top 3 loadouts overall, in a
+main's top 3 loadouts on some vessel, or scores >= 12 on its own for a main. Only relics without the in-game favorite flag are listed; if a build needs two identical
+copies and one is favorited, one more is listed. It uses the saved prefs files (not unsaved edits) and takes ~4 s; the
+result is cached until the save or a prefs file changes. An `.xlsx` source has no favorite flags, so nothing counts as
+favorited. CLI options: `--main NAME` (repeatable, default Raider), `--keep-score 12`, `--top 3`,
+`--main-per-vessel 3`.
 
 ## Stacking rules (source: reference sheet)
 `reference/useful_info.xlsx` is the community "Nightreign Useful Info (1.03.2 + DLC)" sheet (not in the repo: download
