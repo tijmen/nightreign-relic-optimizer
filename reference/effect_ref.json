@@ -4436,6 +4436,24 @@
    "effect": "Increases damage by the specified weapon type by 1.2x (1.1x for bows)",
    "stack": "No",
    "notes": "Works for damage from all sources. E.g. spells"
+  },
+  "6632100": {
+   "sheet": "Deep Relic Effects",
+   "row": 10,
+   "cat": "Exploration",
+   "desc": "Dormant Power Helps Discover [Weapon Class]",
+   "effect": "Changes the preferred weapon class to the specified class, making it more likely to obtain it",
+   "stack": "No",
+   "notes": "Priority is given to first one in order. Does not stack with character's preferred weapon type"
+  },
+  "6040500": {
+   "sheet": "Deep Relic Effects",
+   "row": 18,
+   "cat": "Offensive",
+   "desc": "Improved [Consumable] Damage +1",
+   "effect": "Increases pot/knife/stone/perfume damage by 1.3x",
+   "stack": "Yes",
+   "notes": ""
   }
  },
  "curses": {
