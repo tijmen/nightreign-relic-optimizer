@@ -12,7 +12,7 @@ profile (weapon classes, scaling stats, spells, their own tagged effects, stat-s
 By default relics are read from your save, `%APPDATA%\Nightreign\<steam id>\NR0000.sl2` (the most recently written one;
 read-only, `sl2_reader.py`). With several characters in one save, the slot with the most relics is used; pick another
 with `--slot NAME`. `uv run sl2_reader.py` lists the slots. You can also pass a save path, or an
-`all_relics_exported_YYYYMMDD.xlsx` export from the relic editor, as the first argument to any script. Relic names,
+`all_relics_exported_YYYYMMDD.xlsx` export from the [Nightreign Relic Editor](https://github.com/alfizari/Elden-Ring-Nightreign-Save-Editor), as the first argument to any script. Relic names,
 colors, deep-ness and effect names come from the game tables in `reference/save_editor/` (en_US).
 
 ## Workflow after new relics or a game patch
