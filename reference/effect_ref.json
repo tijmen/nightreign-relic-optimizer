@@ -4454,6 +4454,42 @@
    "effect": "Increases pot/knife/stone/perfume damage by 1.3x",
    "stack": "Yes",
    "notes": ""
+  },
+  "7035410": {
+   "sheet": "Relic Effects",
+   "row": 66,
+   "cat": "Regen",
+   "desc": "Gesture \"Crossed Legs\" Builds Up Madness",
+   "effect": "Inflicts 10 madness buildup every 2 seconds",
+   "stack": "No",
+   "notes": "Exclusive to (Dark) Night of the Demon"
+  },
+  "7035510": {
+   "sheet": "Relic Effects",
+   "row": 67,
+   "cat": "Regen",
+   "desc": "Madness Continually Recovers FP",
+   "effect": "Recovers 2 FP/s for 25 seconds",
+   "stack": "No",
+   "notes": "Exclusive to (Dark) Night of the Demon"
+  },
+  "7006200": {
+   "sheet": "Relic Effects",
+   "row": 52,
+   "cat": "Defensive",
+   "desc": "Improved Physical Damage Negation",
+   "effect": "Increases physical damage negation by 10%",
+   "stack": "Yes",
+   "notes": "Exclusive to Dark Night of the Miasma"
+  },
+  "6040400": {
+   "sheet": "Deep Relic Effects",
+   "row": 18,
+   "cat": "Offensive",
+   "desc": "Improved [Consumable] Damage +1",
+   "effect": "Increases pot/knife/stone/perfume damage by 1.3x",
+   "stack": "Yes",
+   "notes": ""
   }
  },
  "curses": {

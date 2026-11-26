@@ -39,7 +39,7 @@ OVERRIDES = {
     r"^Improved Stance-Breaking when Wielding Two Armaments$": (NORMAL, "Improved stance breaking while wielding"),
     r"^Physical attack power increases after using grease items$": (NORMAL, "Attack power increases after using grease"),
     r"^Improved (Throwing Pot|Throwing Knife|Glintstone and Gravity Stone) Damage$|^Improved Perfuming Arts$": (NORMAL, "Improved Throwing Pot/Knife"),
-    r"^Improved (Throwing Pot Damage|Perfuming Arts|Glintstone and Gravity Stone Damage) \+[12]$": (DEEP, "Improved [Consumable] Damage"),
+    r"^Improved (Throwing Pot Damage|Throwing Knife Damage|Perfuming Arts|Glintstone and Gravity Stone Damage) \+[12]$": (DEEP, "Improved [Consumable] Damage"),
     r"^Improved .+ (Sorcery|sorcery|Incantations)$": (NORMAL, "Improved [Spell School]"),
     r"^Improved Roar & Breath Attacks$": (NORMAL, "Improves Roar and Breath"),
     r"^Improved (?!Affinity|Melee|Skill).+ Attack Power$": (NORMAL, "Improve [Weapon Type] attack power"),
